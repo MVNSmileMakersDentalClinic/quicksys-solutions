@@ -53,20 +53,20 @@ export default function HomePage() {
 
           <div className="animate-fade-up-delay relative mx-auto w-full max-w-md">
             <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-ice-400/30 via-transparent to-amber-400/20 blur-2xl" />
-            <div className="relative overflow-hidden rounded-[2rem] border border-white/20 bg-navy-950 shadow-2xl shadow-black/30">
-              <div className="bg-gradient-to-b from-slate-200/90 to-black p-4 sm:p-5">
+            <div className="relative overflow-hidden rounded-[2rem] border border-white/20 bg-white shadow-2xl shadow-black/30">
+              <div className="relative aspect-[16/10] bg-frost-100">
                 <LightboxImage
                   src={siteConfig.nameImage}
-                  alt={siteConfig.name}
-                  title={siteConfig.name}
-                  width={480}
-                  height={180}
-                  imageClassName="mx-auto h-auto w-full object-contain"
-                  className="w-full"
+                  alt="Office ceiling cassette central air conditioning"
+                  title="Centralized office AC"
+                  caption="Cassette & ducted systems for modern offices"
+                  fill
+                  imageClassName="object-cover"
+                  sizes="(max-width: 768px) 100vw, 28rem"
                   priority
                 />
               </div>
-              <div className="grid grid-cols-3 gap-3 bg-white p-6">
+              <div className="grid grid-cols-3 gap-3 p-6">
                 <div className="text-center">
                   <div className="mx-auto mb-1 flex h-8 w-8 items-center justify-center rounded-full bg-amber-50 text-amber-500">
                     <Star className="h-4 w-4 fill-current" />
