@@ -18,11 +18,13 @@ export const siteConfig = {
   contactRole: "Business Head",
   rating: "4.7",
   bank: "IndusInd Bank",
+  logo: "/images/quicksys_logo.png",
 };
 
 export const navLinks = [
   { href: "/", label: "Home" },
   { href: "/products", label: "Products" },
+  { href: "/gallery", label: "Gallery" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
@@ -98,7 +100,7 @@ export const products = [
     title: "Ventilation & Coolers",
     summary:
       "Industrial ventilation systems and evaporative coolers for factories and warehouses.",
-    image: "/images/warehouse.jpg",
+    image: "/products/split-ac.jpg",
     highlights: [
       "Fresh-air ventilation",
       "Industrial evaporative coolers",
@@ -106,6 +108,26 @@ export const products = [
       "Rugged outdoor performance",
     ],
   },
+];
+
+export type GalleryItem = {
+  id: string;
+  title: string;
+  category: "Company" | "Events";
+  image: string;
+  description?: string;
+};
+
+export const galleryItems: GalleryItem[] = [
+  // Add images under public/gallery/company/ and public/gallery/events/
+  // then register them here, for example:
+  // {
+  //   id: "company-1",
+  //   title: "Company Office",
+  //   category: "Company",
+  //   image: "/gallery/company/office-1.jpg",
+  //   description: "Our team and workplace in Patna.",
+  // },
 ];
 
 export const whyUs = [

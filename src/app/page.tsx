@@ -1,29 +1,30 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Snowflake, ShieldCheck, Wrench } from "lucide-react";
+import { ArrowRight, Snowflake, ShieldCheck, Star, Wrench } from "lucide-react";
 import { products, siteConfig, whyUs } from "@/lib/data";
 
 export default function HomePage() {
   return (
     <>
       <section className="relative overflow-hidden bg-gradient-to-br from-brand-950 via-brand-800 to-brand-600 text-white">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.12),transparent_45%)]" />
-        <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 md:grid-cols-2 md:py-24">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.14),transparent_45%)]" />
+        <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-4 py-16 md:grid-cols-2 md:py-24">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-200">
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-brand-200">
               Patna, Bihar · Est. {siteConfig.established}
             </p>
-            <h1 className="mt-4 font-display text-4xl font-semibold leading-tight md:text-5xl">
-              {siteConfig.name}
+            <h1 className="mt-5 font-display text-5xl font-semibold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
+              Quicksys
+              <span className="block text-brand-100">Solutions</span>
             </h1>
-            <p className="mt-4 max-w-xl text-lg text-brand-50/90">
+            <p className="mt-5 max-w-xl text-lg text-brand-50/90 md:text-xl">
               {siteConfig.tagline}. Split, cassette, ducted, tower & VRV systems
               for homes, offices, and industrial spaces.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
                 href="/products"
-                className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-brand-900 hover:bg-brand-50"
+                className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-brand-900 hover:bg-brand-50"
               >
                 View Products
                 <ArrowRight className="h-4 w-4" />
@@ -32,29 +33,53 @@ export default function HomePage() {
                 href={`https://wa.me/${siteConfig.whatsapp}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-white/40 px-5 py-3 text-sm font-semibold text-white hover:bg-white/10"
+                className="inline-flex items-center gap-2 rounded-full border border-white/40 px-6 py-3.5 text-sm font-semibold text-white hover:bg-white/10"
               >
                 WhatsApp Enquiry
               </a>
             </div>
           </div>
 
-          <div className="relative mx-auto w-full max-w-md">
-            <div className="overflow-hidden rounded-3xl border border-white/20 bg-white/10 p-3 shadow-2xl backdrop-blur">
-              <Image
-                src="/images/warehouse.jpg"
-                alt="Quicksys warehouse and products"
-                width={800}
-                height={600}
-                className="h-72 w-full rounded-2xl object-cover md:h-80"
-                priority
-              />
-            </div>
-            <div className="absolute -bottom-4 left-4 rounded-2xl bg-white px-4 py-3 text-brand-900 shadow-lg">
-              <p className="text-xs font-semibold uppercase tracking-wide text-brand-600">
-                Rated
-              </p>
-              <p className="text-2xl font-bold">{siteConfig.rating}/5</p>
+          <div className="mx-auto w-full max-w-md">
+            <div className="rounded-[2rem] border border-white/25 bg-white p-8 shadow-2xl shadow-black/20 md:p-10">
+              <div className="flex flex-col items-center text-center">
+                <Image
+                  src={siteConfig.logo}
+                  alt={siteConfig.name}
+                  width={220}
+                  height={220}
+                  className="h-36 w-36 object-contain md:h-44 md:w-44"
+                  priority
+                />
+                <p className="mt-5 text-xl font-bold text-brand-900">
+                  {siteConfig.name}
+                </p>
+                <p className="mt-1 text-sm text-slate-500">
+                  {siteConfig.location}
+                </p>
+              </div>
+
+              <div className="mt-8 grid grid-cols-3 gap-3 border-t border-slate-100 pt-6">
+                <div className="text-center">
+                  <div className="mx-auto mb-1 flex h-8 w-8 items-center justify-center rounded-full bg-amber-50 text-amber-500">
+                    <Star className="h-4 w-4 fill-current" />
+                  </div>
+                  <p className="text-lg font-bold text-brand-900">
+                    {siteConfig.rating}
+                  </p>
+                  <p className="text-[11px] text-slate-500">Customer rating</p>
+                </div>
+                <div className="text-center">
+                  <p className="text-lg font-bold text-brand-900">
+                    {siteConfig.established}
+                  </p>
+                  <p className="mt-1 text-[11px] text-slate-500">Established</p>
+                </div>
+                <div className="text-center">
+                  <p className="text-lg font-bold text-brand-900">6+</p>
+                  <p className="mt-1 text-[11px] text-slate-500">Product lines</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -115,7 +140,10 @@ export default function HomePage() {
               text: "Established OPC company serving Bihar with reliable supply support.",
             },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-brand-100 bg-brand-50/40 p-6">
+            <div
+              key={item.title}
+              className="rounded-2xl border border-brand-100 bg-brand-50/40 p-6"
+            >
               <item.icon className="h-8 w-8 text-brand-700" />
               <h3 className="mt-4 text-lg font-semibold text-brand-950">
                 {item.title}

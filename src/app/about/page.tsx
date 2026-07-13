@@ -31,13 +31,13 @@ export default function AboutPage() {
             communication and practical recommendations.
           </p>
         </div>
-        <div className="relative overflow-hidden rounded-3xl border bg-white p-3 shadow-sm">
+        <div className="relative overflow-hidden rounded-3xl border bg-white p-8 shadow-sm md:p-12">
           <Image
-            src="/images/logo.jpg"
+            src={siteConfig.logo}
             alt={siteConfig.name}
-            width={700}
-            height={700}
-            className="h-auto w-full rounded-2xl object-cover"
+            width={480}
+            height={480}
+            className="mx-auto h-auto w-full max-w-sm object-contain"
           />
         </div>
       </div>

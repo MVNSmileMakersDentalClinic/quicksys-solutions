@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { navLinks, siteConfig } from "@/lib/data";
 
@@ -7,7 +8,16 @@ export function Footer() {
     <footer className="border-t bg-brand-950 text-brand-50">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 md:grid-cols-3">
         <div>
-          <p className="font-display text-2xl font-semibold">{siteConfig.name}</p>
+          <div className="flex items-center gap-3">
+            <Image
+              src={siteConfig.logo}
+              alt={siteConfig.name}
+              width={56}
+              height={56}
+              className="h-14 w-14 rounded-xl bg-white object-contain p-1"
+            />
+            <p className="font-display text-2xl font-semibold">{siteConfig.name}</p>
+          </div>
           <p className="mt-3 text-sm leading-relaxed text-brand-200">
             {siteConfig.legalName}. Established {siteConfig.established} in{" "}
             {siteConfig.location}. {siteConfig.nature}.
