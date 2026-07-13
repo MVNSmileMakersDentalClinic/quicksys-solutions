@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { ImageIcon } from "lucide-react";
+import { LightboxImage } from "@/components/shared/ImageLightbox";
 import { galleryItems } from "@/lib/data";
 
 const categories = ["Company", "Events"] as const;
@@ -36,11 +36,13 @@ export function GalleryGrid() {
                     className="overflow-hidden rounded-2xl border bg-white shadow-sm"
                   >
                     <div className="relative aspect-[4/3] bg-slate-100">
-                      <Image
+                      <LightboxImage
                         src={item.image}
                         alt={item.title}
+                        title={item.title}
+                        caption={item.description}
                         fill
-                        className="object-cover"
+                        imageClassName="object-cover"
                         sizes="(max-width: 768px) 100vw, 33vw"
                       />
                     </div>

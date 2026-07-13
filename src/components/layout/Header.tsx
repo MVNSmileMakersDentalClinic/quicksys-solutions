@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, Phone, X } from "lucide-react";
+import { LightboxImage } from "@/components/shared/ImageLightbox";
 import { navLinks, siteConfig } from "@/lib/data";
 import { cn } from "@/lib/utils";
 
@@ -15,24 +15,25 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-brand-100 bg-white/95 shadow-sm backdrop-blur">
       <div className="mx-auto flex h-20 max-w-6xl items-center justify-between gap-4 px-4 md:h-24">
-        <Link href="/" className="flex items-center gap-3 md:gap-4">
-          <Image
+        <div className="flex items-center gap-3 md:gap-4">
+          <LightboxImage
             src={siteConfig.logo}
             alt={siteConfig.name}
+            title={siteConfig.name}
             width={72}
             height={72}
-            className="h-14 w-14 object-contain md:h-16 md:w-16"
+            imageClassName="h-14 w-14 object-contain md:h-16 md:w-16"
             priority
           />
-          <div className="leading-tight">
+          <Link href="/" className="leading-tight">
             <p className="font-display text-xl font-semibold tracking-tight text-brand-900 md:text-2xl">
               Quicksys
             </p>
             <p className="text-sm font-medium text-brand-600 md:text-base">
               Solutions
             </p>
-          </div>
-        </Link>
+          </Link>
+        </div>
 
         <nav className="hidden items-center gap-1 lg:flex">
           {navLinks.map((link) => (

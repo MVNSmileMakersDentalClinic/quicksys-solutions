@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import { LightboxImage } from "@/components/shared/ImageLightbox";
 import { siteConfig } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -32,12 +32,14 @@ export default function AboutPage() {
           </p>
         </div>
         <div className="relative overflow-hidden rounded-3xl border bg-white p-8 shadow-sm md:p-12">
-          <Image
+          <LightboxImage
             src={siteConfig.logo}
             alt={siteConfig.name}
+            title={siteConfig.name}
             width={360}
             height={360}
-            className="mx-auto h-auto w-full max-w-xs object-contain"
+            imageClassName="mx-auto h-auto w-full max-w-xs object-contain"
+            className="w-full justify-center"
           />
         </div>
       </div>

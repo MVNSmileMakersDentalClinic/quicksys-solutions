@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
 import { ArrowRight, Snowflake, ShieldCheck, Star, Wrench } from "lucide-react";
+import { LightboxImage } from "@/components/shared/ImageLightbox";
 import { products, siteConfig, whyUs } from "@/lib/data";
 
 export default function HomePage() {
@@ -43,12 +43,14 @@ export default function HomePage() {
           <div className="mx-auto w-full max-w-md">
             <div className="rounded-[2rem] border border-white/25 bg-white p-8 shadow-2xl shadow-black/20 md:p-10">
               <div className="flex flex-col items-center text-center">
-                <Image
+                <LightboxImage
                   src={siteConfig.nameImage}
                   alt={siteConfig.name}
+                  title={siteConfig.name}
                   width={480}
                   height={160}
-                  className="mx-auto h-auto w-full max-w-sm object-contain"
+                  imageClassName="mx-auto h-auto w-full max-w-sm object-contain"
+                  className="w-full"
                   priority
                 />
                 <p className="mt-4 text-sm text-slate-500">
@@ -99,11 +101,13 @@ export default function HomePage() {
               className="group overflow-hidden rounded-2xl border bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
             >
               <div className="relative aspect-[4/3]">
-                <Image
+                <LightboxImage
                   src={product.image}
                   alt={product.title}
+                  title={product.title}
+                  caption={product.summary}
                   fill
-                  className="object-cover transition duration-300 group-hover:scale-105"
+                  imageClassName="object-cover transition duration-300 group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>

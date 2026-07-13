@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Facebook, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import { LightboxImage } from "@/components/shared/ImageLightbox";
 import { navLinks, siteConfig } from "@/lib/data";
 
 export function Footer() {
@@ -9,12 +9,13 @@ export function Footer() {
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 md:grid-cols-3">
         <div>
           <div className="flex items-center gap-3">
-            <Image
+            <LightboxImage
               src={siteConfig.logo}
               alt={siteConfig.name}
+              title={siteConfig.name}
               width={56}
               height={56}
-              className="h-14 w-14 rounded-xl bg-white object-contain p-1"
+              imageClassName="h-14 w-14 rounded-xl bg-white object-contain p-1"
             />
             <p className="font-display text-2xl font-semibold">{siteConfig.name}</p>
           </div>

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
+import { LightboxImage } from "@/components/shared/ImageLightbox";
 import { products, siteConfig } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -32,11 +32,13 @@ export default function ProductsPage() {
             className="grid overflow-hidden rounded-3xl border bg-white shadow-sm md:grid-cols-[280px_1fr]"
           >
             <div className="relative min-h-56">
-              <Image
+              <LightboxImage
                 src={product.image}
                 alt={product.title}
+                title={product.title}
+                caption={product.summary}
                 fill
-                className="object-cover"
+                imageClassName="object-cover"
                 sizes="(max-width: 768px) 100vw, 280px"
               />
             </div>
