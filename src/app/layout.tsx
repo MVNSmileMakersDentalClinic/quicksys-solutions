@@ -1,20 +1,18 @@
 import type { Metadata } from "next";
-import { Barlow_Condensed, IBM_Plex_Sans } from "next/font/google";
+import { Outfit, Plus_Jakarta_Sans } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ImageLightboxProvider } from "@/components/shared/ImageLightbox";
 import { siteConfig } from "@/lib/data";
 import "./globals.css";
 
-const sans = IBM_Plex_Sans({
+const sans = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
   variable: "--font-sans",
 });
 
-const display = Barlow_Condensed({
+const display = Outfit({
   subsets: ["latin"],
-  weight: ["500", "600", "700"],
   variable: "--font-display",
 });
 

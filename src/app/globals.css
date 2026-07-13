@@ -15,27 +15,39 @@ body {
 }
 
 @layer components {
-  .btn-quote {
-    @apply inline-flex items-center justify-center gap-2 rounded-md bg-amber-400 px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-navy-950 transition hover:bg-amber-300;
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-ice-500 to-ice-600 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-ice-500/25 transition duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-ice-500/30;
   }
 
-  .btn-navy {
-    @apply inline-flex items-center justify-center gap-2 rounded-md bg-navy-900 px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-white transition hover:bg-navy-800;
+  .btn-accent {
+    @apply inline-flex items-center justify-center gap-2 rounded-2xl bg-amber-400 px-6 py-3.5 text-sm font-semibold text-navy-950 shadow-lg shadow-amber-400/25 transition duration-300 hover:-translate-y-0.5 hover:bg-amber-300;
   }
 
-  .btn-outline-light {
-    @apply inline-flex items-center justify-center gap-2 rounded-md border border-white/40 px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-white transition hover:bg-white/10;
+  .btn-ghost-light {
+    @apply inline-flex items-center justify-center gap-2 rounded-2xl border border-white/25 bg-white/10 px-6 py-3.5 text-sm font-semibold text-white backdrop-blur transition duration-300 hover:bg-white/20;
   }
 
   .btn-whatsapp {
-    @apply inline-flex items-center justify-center gap-2 rounded-md bg-[#25D366] px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-white transition hover:bg-[#1ebe57];
+    @apply inline-flex items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-[#25D366]/20 transition duration-300 hover:-translate-y-0.5 hover:bg-[#1ebe57];
+  }
+
+  .btn-dark {
+    @apply inline-flex items-center justify-center gap-2 rounded-2xl bg-navy-900 px-6 py-3.5 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-navy-800;
   }
 
   .section-label {
-    @apply text-xs font-bold uppercase tracking-[0.2em] text-ice-600;
+    @apply text-sm font-semibold tracking-wide text-ice-600;
   }
 
-  .dealer-panel {
-    @apply rounded-lg border border-frost-200 bg-white shadow-sm;
+  .glass-panel {
+    @apply rounded-3xl border border-white/50 bg-white/70 shadow-[0_20px_60px_-20px_rgba(11,31,51,0.25)] backdrop-blur-xl;
+  }
+
+  .modern-card {
+    @apply overflow-hidden rounded-3xl border border-frost-200/80 bg-white shadow-[0_8px_30px_-12px_rgba(11,31,51,0.12)] transition duration-500 hover:-translate-y-1 hover:shadow-[0_24px_50px_-16px_rgba(11,31,51,0.2)];
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-ice-400 via-ice-300 to-amber-300 bg-clip-text text-transparent;
   }
 }

@@ -11,14 +11,14 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="mx-auto max-w-7xl px-4 py-12">
-      <div className="grid items-center gap-10 lg:grid-cols-2">
+    <div className="mx-auto max-w-6xl px-4 py-16">
+      <div className="grid items-center gap-12 lg:grid-cols-2">
         <div>
-          <p className="section-label">About Us</p>
-          <h1 className="mt-2 font-display text-5xl font-bold uppercase tracking-wide text-navy-950">
-            Built for reliable climate solutions
+          <p className="section-label">About us</p>
+          <h1 className="mt-2 font-display text-5xl font-semibold tracking-tight text-navy-950 md:text-6xl">
+            Climate solutions that feel effortless
           </h1>
-          <p className="mt-4 leading-relaxed text-navy-600">
+          <p className="mt-5 leading-relaxed text-navy-600">
             Established in {siteConfig.established} in {siteConfig.location},{" "}
             <strong className="text-navy-900">{siteConfig.legalName}</strong>{" "}
             is engaged as a manufacturer, wholesaler and trader of split air
@@ -30,11 +30,11 @@ export default function AboutPage() {
             for residential, commercial, and industrial requirements — with clear
             communication and practical recommendations.
           </p>
-          <Link href="/contact" className="btn-quote mt-6 inline-flex">
-            Request Quotation
+          <Link href="/contact" className="btn-accent mt-8 inline-flex">
+            Request quotation
           </Link>
         </div>
-        <div className="dealer-panel flex items-center justify-center p-8 md:p-12">
+        <div className="glass-panel flex items-center justify-center p-10 md:p-14">
           <LightboxImage
             src={siteConfig.logo}
             alt={siteConfig.name}
@@ -47,21 +47,19 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {[
           { label: "Established", value: siteConfig.established },
           { label: "Location", value: siteConfig.location },
-          { label: "Team Size", value: siteConfig.employees },
-          { label: "Business", value: "OPC Private Limited" },
+          { label: "Team size", value: siteConfig.employees },
+          { label: "Business", value: "OPC Pvt Ltd" },
         ].map((item) => (
           <div
             key={item.label}
-            className="rounded-lg border border-frost-200 bg-white p-5"
+            className="rounded-3xl border border-frost-200 bg-white p-6"
           >
-            <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-ice-600">
-              {item.label}
-            </p>
-            <p className="mt-2 font-display text-2xl font-bold uppercase text-navy-950">
+            <p className="text-sm font-medium text-ice-600">{item.label}</p>
+            <p className="mt-2 font-display text-2xl font-semibold text-navy-950">
               {item.value}
             </p>
           </div>

@@ -42,14 +42,45 @@ module.exports = {
           900: "#6c2f11",
         },
         frost: {
-          50: "#f5f8fb",
-          100: "#e8eef4",
-          200: "#d0dbe7",
+          50: "#f7fafc",
+          100: "#eef3f7",
+          200: "#dce5ee",
         },
       },
       fontFamily: {
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
         display: ["var(--font-display)", "system-ui", "sans-serif"],
+      },
+      keyframes: {
+        "fade-up": {
+          "0%": { opacity: "0", transform: "translateY(24px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-14px)" },
+        },
+        "float-slow": {
+          "0%, 100%": { transform: "translate(0, 0) scale(1)" },
+          "50%": { transform: "translate(12px, -18px) scale(1.05)" },
+        },
+        marquee: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        shimmer: {
+          "0%": { backgroundPosition: "200% 0" },
+          "100%": { backgroundPosition: "-200% 0" },
+        },
+      },
+      animation: {
+        "fade-up": "fade-up 0.8s ease-out both",
+        "fade-up-delay": "fade-up 0.8s ease-out 0.15s both",
+        "fade-up-delay-2": "fade-up 0.8s ease-out 0.3s both",
+        float: "float 6s ease-in-out infinite",
+        "float-slow": "float-slow 10s ease-in-out infinite",
+        marquee: "marquee 28s linear infinite",
+        shimmer: "shimmer 8s linear infinite",
       },
     },
   },

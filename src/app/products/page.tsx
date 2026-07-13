@@ -12,25 +12,25 @@ export const metadata: Metadata = {
 
 export default function ProductsPage() {
   return (
-    <div className="mx-auto max-w-7xl px-4 py-12">
-      <div className="border-b border-frost-200 pb-8">
-        <p className="section-label">Our Range</p>
-        <h1 className="mt-2 font-display text-5xl font-bold uppercase tracking-wide text-navy-950">
-          Products & Systems
+    <div className="mx-auto max-w-6xl px-4 py-16">
+      <div className="max-w-2xl">
+        <p className="section-label">Our range</p>
+        <h1 className="mt-2 font-display text-5xl font-semibold tracking-tight text-navy-950 md:text-6xl">
+          Products & systems
         </h1>
-        <p className="mt-3 max-w-2xl text-navy-600">
+        <p className="mt-4 text-lg text-navy-600">
           Complete air conditioning and ventilation solutions for homes,
           offices, retail, and industrial spaces across Bihar.
         </p>
       </div>
 
-      <div className="mt-8 space-y-5">
-        {products.map((product, index) => (
+      <div className="mt-12 space-y-8">
+        {products.map((product) => (
           <article
             key={product.id}
-            className="dealer-panel grid overflow-hidden md:grid-cols-[260px_1fr]"
+            className="modern-card grid md:grid-cols-[300px_1fr]"
           >
-            <div className="relative min-h-52 bg-frost-100 md:min-h-full">
+            <div className="relative min-h-56 bg-frost-100 md:min-h-full">
               <LightboxImage
                 src={product.image}
                 alt={product.title}
@@ -38,22 +38,19 @@ export default function ProductsPage() {
                 caption={product.summary}
                 fill
                 imageClassName="object-cover"
-                sizes="(max-width: 768px) 100vw, 260px"
+                sizes="(max-width: 768px) 100vw, 300px"
               />
-              <span className="absolute left-3 top-3 rounded bg-navy-900/90 px-2 py-1 text-[10px] font-bold uppercase tracking-wide text-white">
-                #{String(index + 1).padStart(2, "0")}
-              </span>
             </div>
-            <div className="p-5 md:p-7">
-              <h2 className="font-display text-3xl font-bold uppercase tracking-wide text-navy-950">
+            <div className="p-6 md:p-8">
+              <h2 className="font-display text-3xl font-semibold tracking-tight text-navy-950">
                 {product.title}
               </h2>
-              <p className="mt-2 text-navy-600">{product.summary}</p>
-              <ul className="mt-4 grid gap-2 sm:grid-cols-2">
+              <p className="mt-3 text-navy-600">{product.summary}</p>
+              <ul className="mt-5 grid gap-2 sm:grid-cols-2">
                 {product.highlights.map((item) => (
                   <li
                     key={item}
-                    className="border-l-2 border-ice-500 bg-frost-50 px-3 py-2 text-sm text-navy-800"
+                    className="rounded-2xl bg-frost-50 px-4 py-3 text-sm text-navy-800"
                   >
                     {item}
                   </li>
@@ -75,12 +72,12 @@ export default function ProductsPage() {
         ))}
       </div>
 
-      <div className="mt-10 rounded-lg bg-navy-900 p-6 text-center text-white md:p-8">
-        <p className="font-display text-2xl font-bold uppercase tracking-wide">
-          Looking for a custom combination or bulk supply?
+      <div className="mt-14 overflow-hidden rounded-[2rem] bg-gradient-to-br from-navy-900 to-navy-800 p-8 text-center text-white md:p-12">
+        <p className="font-display text-3xl font-semibold tracking-tight">
+          Need a custom mix or bulk supply?
         </p>
-        <Link href="/contact" className="btn-quote mt-4 inline-flex">
-          Reach our team
+        <Link href="/contact" className="btn-accent mt-6 inline-flex">
+          Talk to our team
         </Link>
       </div>
     </div>

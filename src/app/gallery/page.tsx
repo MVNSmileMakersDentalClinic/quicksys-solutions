@@ -9,15 +9,15 @@ export const metadata: Metadata = {
 
 export default function GalleryPage() {
   return (
-    <div className="mx-auto max-w-7xl px-4 py-12">
-      <div className="mb-10 border-b border-frost-200 pb-8">
+    <div className="mx-auto max-w-6xl px-4 py-16">
+      <div className="mb-12 max-w-2xl">
         <p className="section-label">Gallery</p>
-        <h1 className="mt-2 font-display text-5xl font-bold uppercase tracking-wide text-navy-950">
-          Company & Events
+        <h1 className="mt-2 font-display text-5xl font-semibold tracking-tight text-navy-950 md:text-6xl">
+          Moments & milestones
         </h1>
-        <p className="mt-3 max-w-2xl text-navy-600">
-          Government awards, company moments, and events. Click any photo to
-          view fullscreen.
+        <p className="mt-4 text-lg text-navy-600">
+          Government awards and company moments. Click any photo to view
+          fullscreen.
         </p>
       </div>
       <GalleryGrid />
