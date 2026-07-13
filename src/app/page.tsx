@@ -25,7 +25,7 @@ export default function HomePage() {
         <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-4 py-16 md:grid-cols-2 md:py-24">
           <div className="animate-fade-up">
             <p className="text-sm font-medium text-ice-300">
-              {siteConfig.location} · Est. {siteConfig.established}
+              {siteConfig.coverage} · Est. {siteConfig.established}
             </p>
             <h1 className="mt-4 font-display text-6xl font-semibold leading-[0.95] tracking-tight md:text-7xl lg:text-8xl">
               Quicksys

@@ -6,7 +6,7 @@ import { siteConfig } from "@/lib/data";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about Quicksys Solutions (OPC) Private Limited — air conditioning manufacturer and supplier based in Patna, Bihar since 2018.",
+    "Learn about Quicksys Solutions (OPC) Private Limited — air conditioning solution provider across Bihar since 2018.",
 };
 
 export default function AboutPage() {
@@ -21,14 +21,15 @@ export default function AboutPage() {
           <p className="mt-5 leading-relaxed text-navy-600">
             Established in {siteConfig.established} in {siteConfig.location},{" "}
             <strong className="text-navy-900">{siteConfig.legalName}</strong>{" "}
-            is engaged as a manufacturer, wholesaler and trader of split air
-            conditioners, ducted systems, cassette ACs, VRV systems, tower ACs,
-            ventilation systems and more.
+            is a solution provider across Bihar — engaged as a manufacturer,
+            wholesaler and trader of split air conditioners, ducted systems,
+            cassette ACs, VRV systems, tower ACs, ventilation systems and more.
           </p>
           <p className="mt-4 leading-relaxed text-navy-600">
-            We help customers choose the right cooling capacity and product type
-            for residential, commercial, and industrial requirements — with clear
-            communication and practical recommendations.
+            Led by {siteConfig.contactPerson}, we help customers choose the right
+            cooling capacity and product type for residential, commercial, and
+            industrial requirements — with clear communication and practical
+            recommendations.
           </p>
           <Link href="/contact" className="btn-accent mt-8 inline-flex">
             Request quotation

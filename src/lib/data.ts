@@ -1,20 +1,22 @@
 export const siteConfig = {
   name: "Quicksys Solutions",
   legalName: "Quicksys Solutions (OPC) Private Limited",
-  tagline: "Cooling & Climate Solutions for Every Space",
+  tagline: "Cooling & Climate Solutions Across Bihar",
   description:
-    "Quicksys Solutions is a Patna-based manufacturer and supplier of split, cassette, ducted, tower, and VRV air conditioning systems, plus industrial ventilation solutions.",
+    "Quicksys Solutions is a Bihar-wide solution provider for split, cassette, ducted, tower, and VRV air conditioning systems, plus industrial ventilation solutions.",
   url: "https://quicksyssolutions.vercel.app",
-  phone: "8047805988",
-  phoneDisplay: "+91 80478 05988",
-  email: "hello@quicksyssolutions.com",
-  whatsapp: "918047805988",
+  phone: "7004179633",
+  phoneDisplay: "+91 70041 79633",
+  email: "quicksyssolutions@gmail.com",
+  whatsapp: "917004179633",
   established: "2018",
   location: "Patna, Bihar",
   address: "Patna, Bihar, India",
+  mapsUrl: "https://maps.app.goo.gl/D6a8vpAKkqfA1WVu5",
+  coverage: "Solution provider across Bihar",
   employees: "Upto 10 People",
   nature: "Manufacturer, Wholesaler & Trader",
-  contactPerson: "S Saurabh",
+  contactPerson: "Subodh Saurabh",
   contactRole: "Business Head",
   rating: "4.7",
   bank: "IndusInd Bank",
@@ -147,7 +149,7 @@ export const galleryItems: GalleryItem[] = [
 export const whyUs = [
   {
     title: "Established since 2018",
-    text: "Serving Patna and Bihar with practical cooling solutions for residential and commercial needs.",
+    text: "Solution provider across Bihar with practical cooling for residential and commercial needs.",
   },
   {
     title: "Wide product range",

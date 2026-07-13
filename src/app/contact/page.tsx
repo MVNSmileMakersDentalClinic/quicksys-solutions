@@ -5,7 +5,7 @@ import { siteConfig } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contact Quicksys Solutions in Patna for air conditioning product enquiries, quotations, and project support.",
+    "Contact Quicksys Solutions across Bihar for air conditioning product enquiries, quotations, and project support.",
 };
 
 export default function ContactPage() {
@@ -97,8 +97,17 @@ export default function ContactPage() {
           <div className="mt-6 flex items-start gap-3 border-t border-frost-200 pt-6">
             <MapPin className="mt-1 h-5 w-5 text-ice-600" />
             <div>
-              <p className="text-sm font-medium text-navy-500">Location</p>
+              <p className="text-sm font-medium text-navy-500">Office location</p>
               <p className="mt-1 text-navy-800">{siteConfig.address}</p>
+              <p className="mt-1 text-sm text-navy-600">{siteConfig.coverage}</p>
+              <a
+                href={siteConfig.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-flex text-sm font-semibold text-ice-700 hover:text-ice-600"
+              >
+                Open in Google Maps →
+              </a>
             </div>
           </div>
         </div>
@@ -109,6 +118,10 @@ export default function ContactPage() {
             {siteConfig.legalName}
           </h2>
           <ul className="mt-5 space-y-2 text-sm text-navy-200">
+            <li>
+              <span className="text-ice-400">Coverage:</span>{" "}
+              {siteConfig.coverage}
+            </li>
             <li>
               <span className="text-ice-400">Nature:</span> {siteConfig.nature}
             </li>

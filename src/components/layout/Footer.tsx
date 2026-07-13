@@ -93,7 +93,20 @@ export function Footer() {
             </li>
             <li className="flex items-start gap-2">
               <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-ice-400" />
-              <span>{siteConfig.address}</span>
+              <span>
+                {siteConfig.address}
+                <br />
+                <span className="text-navy-300">{siteConfig.coverage}</span>
+                <br />
+                <a
+                  href={siteConfig.mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-ice-300 hover:text-ice-200"
+                >
+                  View on Google Maps
+                </a>
+              </span>
             </li>
           </ul>
           <Link href="/contact" className="btn-accent mt-6 inline-flex">
