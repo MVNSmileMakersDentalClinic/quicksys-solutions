@@ -19,19 +19,19 @@ export function Header() {
           <Image
             src={siteConfig.logo}
             alt={siteConfig.name}
-            width={120}
-            height={120}
+            width={72}
+            height={72}
             className="h-14 w-14 object-contain md:h-16 md:w-16"
             priority
           />
-          <div className="leading-tight">
-            <p className="font-display text-xl font-semibold tracking-tight text-brand-900 md:text-2xl">
-              Quicksys
-            </p>
-            <p className="text-sm font-medium text-brand-600 md:text-base">
-              Solutions
-            </p>
-          </div>
+          <Image
+            src={siteConfig.wordmark}
+            alt={siteConfig.name}
+            width={220}
+            height={56}
+            className="h-9 w-auto object-contain md:h-11"
+            priority
+          />
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex">

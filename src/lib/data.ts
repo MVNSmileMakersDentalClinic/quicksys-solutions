@@ -18,7 +18,14 @@ export const siteConfig = {
   contactRole: "Business Head",
   rating: "4.7",
   bank: "IndusInd Bank",
-  logo: "/images/quicksys_logo.png",
+  logo: "/images/qs_logo.jpeg",
+  wordmark: "/images/name.jpeg",
+  social: {
+    facebook:
+      "https://www.facebook.com/p/Quicksys-Solutions-Pvt-Ltd-100063633563321/",
+    linkedin:
+      "https://www.linkedin.com/company/quicksys-solutions-pvt-ltd/?originalSubdomain=in",
+  },
 };
 
 export const navLinks = [

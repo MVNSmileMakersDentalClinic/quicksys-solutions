@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Facebook, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import { navLinks, siteConfig } from "@/lib/data";
 
 export function Footer() {
@@ -16,12 +16,38 @@ export function Footer() {
               height={56}
               className="h-14 w-14 rounded-xl bg-white object-contain p-1"
             />
-            <p className="font-display text-2xl font-semibold">{siteConfig.name}</p>
+            <Image
+              src={siteConfig.wordmark}
+              alt={siteConfig.name}
+              width={180}
+              height={40}
+              className="h-8 w-auto object-contain brightness-0 invert"
+            />
           </div>
           <p className="mt-3 text-sm leading-relaxed text-brand-200">
             {siteConfig.legalName}. Established {siteConfig.established} in{" "}
             {siteConfig.location}. {siteConfig.nature}.
           </p>
+          <div className="mt-4 flex gap-3">
+            <a
+              href={siteConfig.social.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-white/20"
+            >
+              <Facebook className="h-5 w-5" />
+            </a>
+            <a
+              href={siteConfig.social.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-white/20"
+            >
+              <Linkedin className="h-5 w-5" />
+            </a>
+          </div>
         </div>
 
         <div>

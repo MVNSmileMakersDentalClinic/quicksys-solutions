@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Snowflake, ShieldCheck, Star, Wrench } from "lucide-react";
+import { ArrowRight, Snowflake, ShieldCheck, Wrench } from "lucide-react";
 import { products, siteConfig, whyUs } from "@/lib/data";
 
 export default function HomePage() {
@@ -13,10 +13,16 @@ export default function HomePage() {
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-brand-200">
               Patna, Bihar · Est. {siteConfig.established}
             </p>
-            <h1 className="mt-5 font-display text-5xl font-semibold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
-              Quicksys
-              <span className="block text-brand-100">Solutions</span>
-            </h1>
+            <div className="mt-6">
+              <Image
+                src={siteConfig.wordmark}
+                alt={siteConfig.name}
+                width={520}
+                height={120}
+                className="h-auto w-full max-w-md object-contain brightness-0 invert"
+                priority
+              />
+            </div>
             <p className="mt-5 max-w-xl text-lg text-brand-50/90 md:text-xl">
               {siteConfig.tagline}. Split, cassette, ducted, tower & VRV systems
               for homes, offices, and industrial spaces.
@@ -40,46 +46,16 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="mx-auto w-full max-w-md">
-            <div className="rounded-[2rem] border border-white/25 bg-white p-8 shadow-2xl shadow-black/20 md:p-10">
-              <div className="flex flex-col items-center text-center">
-                <Image
-                  src={siteConfig.logo}
-                  alt={siteConfig.name}
-                  width={220}
-                  height={220}
-                  className="h-36 w-36 object-contain md:h-44 md:w-44"
-                  priority
-                />
-                <p className="mt-5 text-xl font-bold text-brand-900">
-                  {siteConfig.name}
-                </p>
-                <p className="mt-1 text-sm text-slate-500">
-                  {siteConfig.location}
-                </p>
-              </div>
-
-              <div className="mt-8 grid grid-cols-3 gap-3 border-t border-slate-100 pt-6">
-                <div className="text-center">
-                  <div className="mx-auto mb-1 flex h-8 w-8 items-center justify-center rounded-full bg-amber-50 text-amber-500">
-                    <Star className="h-4 w-4 fill-current" />
-                  </div>
-                  <p className="text-lg font-bold text-brand-900">
-                    {siteConfig.rating}
-                  </p>
-                  <p className="text-[11px] text-slate-500">Customer rating</p>
-                </div>
-                <div className="text-center">
-                  <p className="text-lg font-bold text-brand-900">
-                    {siteConfig.established}
-                  </p>
-                  <p className="mt-1 text-[11px] text-slate-500">Established</p>
-                </div>
-                <div className="text-center">
-                  <p className="text-lg font-bold text-brand-900">6+</p>
-                  <p className="mt-1 text-[11px] text-slate-500">Product lines</p>
-                </div>
-              </div>
+          <div className="mx-auto flex w-full max-w-md items-center justify-center">
+            <div className="rounded-[2rem] border border-white/25 bg-white p-10 shadow-2xl shadow-black/20 md:p-14">
+              <Image
+                src={siteConfig.logo}
+                alt={siteConfig.name}
+                width={280}
+                height={280}
+                className="mx-auto h-48 w-48 object-contain md:h-56 md:w-56"
+                priority
+              />
             </div>
           </div>
         </div>
@@ -180,13 +156,31 @@ export default function HomePage() {
               Talk to {siteConfig.contactPerson}, {siteConfig.contactRole}.
             </p>
           </div>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-brand-900"
-          >
-            Contact Us
-            <ArrowRight className="h-4 w-4" />
-          </Link>
+          <div className="flex flex-wrap gap-3">
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-brand-900"
+            >
+              Contact Us
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+            <a
+              href={siteConfig.social.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center rounded-full border border-white/30 px-5 py-3 text-sm font-semibold text-white hover:bg-white/10"
+            >
+              Facebook
+            </a>
+            <a
+              href={siteConfig.social.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center rounded-full border border-white/30 px-5 py-3 text-sm font-semibold text-white hover:bg-white/10"
+            >
+              LinkedIn
+            </a>
+          </div>
         </div>
       </section>
     </>
