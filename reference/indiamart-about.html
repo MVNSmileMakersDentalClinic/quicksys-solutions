@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://www.indiamart.com/quicksyssolutionsopc/aboutus.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/clarity.js"></script><script async="" src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/5tqh9ncnxn"></script><script type="text/javascript" async="" src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/js"></script><script async="" src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/gtm.js"></script><script>window.imgtm=window.imgtm||[];imgtm.push({"PV_Tracking":"/company/purl//aboutus/quicksyssolutionsopc/","CD_FCP_Rank":"","CD_Miscellaneous":"v42-FCP-RT5|PG=profile|GST-Y|React"});(function(){try{var c=String(document.cookie||'');var m=c.match(/(?:^|;\s*)ImeshVisitor=([^;]*)/);var v=m?decodeURIComponent(m[1]||''):'';var um=v&&String(v).trim()?'identified':'unidentified';if(window.imgtm&&window.imgtm.length){var last=window.imgtm[window.imgtm.length-1];if(last&&typeof last==='object'){last['CD_User-Mode']=um;}}if(window.imgtm&&window.imgtm[0]&&typeof window.imgtm[0]==='object'){window.imgtm[0]['CD_User-Mode']=um;}}catch(e){}})();if(typeof _gaq==='undefined'||typeof _gaq!=='object'){var _gaq={};_gaq.push=function(e){try{if('_trackPageview'===e[0]){window.imgtm.push({event:'VirtualPageview',virtualPageURL:e[1],virtualPageTitle:e[2]?e[2]:''})}else if('_trackEvent'===e[0]){window.imgtm.push({event:'IMEvent',eventCategory:e[1],eventAction:e[2],eventLabel:e[3],eventValue:e[4]})}}catch(ex){}};}</script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','imgtm','GTM-NR4G');</script><script>
+// Mirrors getPreEventLabel() + prelabelNEC() from src/utils/gtm.js.
+// Inlined here because this script runs before React hydration.
+function getHeaderPreEventLabel() {
+try {
+var c = String(document.cookie || '');
+function gp(cv, k) {
+if (!cv) return '';
+var pairs = cv.split('|');
+for (var i = 0; i < pairs.length; i++) {
+var eq = pairs[i].indexOf('=');
+if (eq > -1 && pairs[i].slice(0, eq) === k) return pairs[i].slice(eq + 1);
+}
+return '';
+}
+var mic = (c.match(/(?:^|;s*)ImeshVisitor=([^;]*)/) || [])[1];
+var ic  = mic ? decodeURIComponent(mic) : '';
+var ipc = (c.match(/(?:^|;s*)iploc=([^;]*)/) || [])[1];
+var ipl = ipc ? decodeURIComponent(ipc) : '';
+var gcniso = (gp(ipl, 'gcniso') || '').toUpperCase();
+var uv   = gp(ic, 'uv');
+var geo  = gcniso === 'IN' ? 'Indian' : 'Foreign';
+var utyp = ic === '' ? 'Unidentified' : (uv === 'V' ? 'Verified' : 'Unverified');
+var nec  = gp(ic, 'fn') !== '' ? 'N' : '';
+if (gcniso === 'IN') {
+if (gp(ic, 'em')   !== '') nec += 'E';
+if (gp(ic, 'ctid') !== '') nec += 'C';
+if (!nec) nec = 'NO-NEC';
+} else {
+if (gp(ic, 'mb1') !== '') nec += 'M';
+if (!nec) nec = 'NO-NM';
+}
+return geo + '|' + utyp + '|' + nec;
+} catch(e) { return ''; }
+}
+window.handleHeaderClick = function(data) {
+try {
+var action = typeof data === 'string'
+? data
+: String((data && (data.action || data.type || data.eventType)) || '');
+if (/getBestPrice|openBL|postbl/i.test(action)) {
+var cd = window.__COMPANY_DATA__ || {}, s = cd.company || {};
+var modId = s.isPaid ? 'MDC' : 'FCP';
+var pageType = cd.pageType || '';
+try {
+// window.glmodid is set just before this script tag (reactSSR.js) and correctly
+// encodes MDC / TDWIM / FCP using serviceName + isPaid from the full MAPI response.
+var pgMap = {homepage:'home',aboutus:'profile',enquiry:'contactus',catindex:'catindex',category:'catgeory',search:'search',job:'jobs',news:'news',testimonial:'testimonial',demotestimonial:'demotestimonialpage',quality:'quality',infrastructure:'infrastructure','corporate-brochure':'brochure',franchisee:'franchisee','corporate-presentation':'presentation','corporate-video':'videopage',cinpage:'register',customprofile:'customprofile',awards:'awards'};
+var mdcType = window.glmodid || (s.isPaid ? 'MDC' : 'FCP');
+var pgTrack = pgMap[pageType] || pageType;
+var v42 = 'v42-' + mdcType + '|PG=' + pgTrack;
+window.imgtm.push({
+event: 'IMEvent',
+eventCategory: 'Post Buy Leads',
+eventAction: 'CTA Clicked',
+eventLabel: getHeaderPreEventLabel(),
+CD_Additional_Data: 'ctaN=GetBestPrice|ctaT=Message|PT=' + pageType + '|Sec=Header|ReactBL|Pos=|v=|modId=' + modId,
+CD_Miscellaneous: v42 + '|React'
+});
+} catch(te) {}
+var fp = {
+formType:'BL', tempId:'09', instId:'01',
+modId: modId, afflId:'-9',
+prodName:'', prodServ:'P', pDispId:'-1',
+mcatId: s.mcat0 || '', mcatName:'', catId:'',
+displayImage: s.logo || '', zoomImage:'', company_logo: s.logo || '',
+ctaName:'Get Best Price', ctaType:'Message',
+section:'Header|ReactBL', position:'',
+pageType: pageType, scriptVersion:'',
+heading:'Tell us your requirement', modrefType:'company',
+rcvGlid: s.glid || '', rcvName: s.companyName || '',
+rcvCity: s.city || '', rcvState: s.state || '',
+glb_cntCd: s.glb_cntCd || 'IN',
+BLIntent:'yes', isAutoOpen:'', chatbl_open:'', blMultiImage:[]
+};
+document.dispatchEvent(new CustomEvent('enquiry-form:open', {
+detail: { form_param: fp, heading: 'Tell us your requirement', type: 'openBLPopup' }
+}));
+} else if (/signIn|login|signin/i.test(action)) {
+document.dispatchEvent(new CustomEvent('login-popup:open'));
+}
+} catch(e) {}
+};
+// Called by the city suggester when a city is selected from the dropdown
+window.selectcity = function(city) {
+try {
+var val = city || 'All India';
+val = (!val || val === 'null') ? 'All India' : val;
+val = val.replace(/-/g, ' ');
+val = val.toLowerCase().split(' ').map(function(w) {
+return w ? w.charAt(0).toUpperCase() + w.slice(1) : w;
+}).join(' ');
+var el = document.getElementById('hd_usercity');
+if (el) el.textContent = val;
+} catch(e) {}
+};
+// Called by the search suggester when a suggestion item is selected (event, ui pattern from jQuery UI autocomplete)
+window.selecttext = function(event, ui) {
+try {
+var item = ui && ui.item ? ui.item : {};
+var input = document.getElementById('search_string');
+if (input) input.value = item.value || '';
+var form = document.getElementById('hdr_frm');
+if (form) {
+// Append category id if provided
+if (item.data && item.data.catid != null && item.data.catid !== '') {
+var catInput = form.querySelector('#catid') || document.createElement('input');
+catInput.type = 'hidden'; catInput.name = 'catid'; catInput.id = 'catid';
+catInput.value = item.data.catid;
+if (!form.querySelector('#catid')) form.appendChild(catInput);
+}
+// Append source tracking id if askwdSel flag is set
+if (item.askwdSel === 1) {
+var srcInput = form.querySelector('#src') || document.createElement('input');
+srcInput.type = 'hidden'; srcInput.name = 'src'; srcInput.id = 'src';
+srcInput.value = item.trackid || '';
+if (!form.querySelector('#src')) form.appendChild(srcInput);
+}
+}
+// Trigger search on Enter key or click selection
+var isEnter = event && event.keyCode === 13;
+var isClick = event && event.handleObj && event.handleObj.origType === 'click';
+if (isEnter || isClick) {
+var btn = document.getElementById('btnSearch');
+if (btn) btn.click();
+}
+} catch(e) {}
+};
+// Initialise search suggester after the CAAS module (suggestlight.js) has loaded.
+// Mirrors the old GlobalHeader bootstrap: call_suggester() → shows dropdown on focus/click.
+window.addEventListener('load', function() {
+try {
+var input = document.getElementById('search_string');
+if (!input) return;
+function initSuggester() {
+if (typeof window.call_suggester === 'function') {
+window.call_suggester();
+} else if (typeof window.Suggester === 'function' && !window.__hdrSuggesterInitDone) {
+window.__hdrSuggesterInstance = new window.Suggester({
+element: 'search_string',
+type: 'product',
+module: '',
+placeholder: 'Enter product / service to search',
+dispstyle: 2,
+pagetyp: 'p',
+firstclck: 0,
+"onSelect":selecttext,
+"classPlaceholder":"ui-placeholder-input",
+"autocompleteClass":"im-gl-header im-company-header"
+});
+window.__hdrSuggesterInitDone = true;
+}
+}
+input.addEventListener('focus', initSuggester, { once: true });
+input.addEventListener('click', initSuggester, { once: true });
+} catch(e) {}
+});
+</script><title>Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India | About Us</title><meta name="description" content="Quicksys Solutions (OPC) Private Limited, Patna, Bihar -  We are Manufacturer of Daikin FTKM35U Inverter Split Air Conditioner, Cassette Air Conditioner, One Way Daikin FKA71CVM Cassette Air Conditioner, Dakin Cassette Type Air Conditioning and Domestic Fans, AC &amp; Coolers"><meta name="keywords" content="Quicksys Solutions (OPC) Private Limited, Patna, Bihar, Daikin FTKM35U Inverter Split Air Conditioner, Cassette Air Conditioner, One Way Daikin FKA71CVM Cassette Air Conditioner, Dakin Cassette Type Air Conditioning, Daikin RXQ6ARY6 VRV X System, Domestic Fans, AC &amp; Coolers, Manufacturer from Patna"><meta name="robots" content="index,follow"><meta property="og:title" content="Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India | About Us"><meta property="og:site_name" content="IndiaMART.com"><meta property="og:url" content="https://www.indiamart.com/quicksyssolutionsopc/aboutus.html"><meta property="og:description" content="Quicksys Solutions (OPC) Private Limited, Patna, Bihar -  We are Manufacturer of Daikin FTKM35U Inverter Split Air Conditioner, Cassette Air Conditioner, One Way Daikin FKA71CVM Cassette Air Conditioner, Dakin Cassette Type Air Conditioning and Domestic Fans, AC &amp; Coolers"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India | About Us"><meta name="twitter:description" content="Quicksys Solutions (OPC) Private Limited, Patna, Bihar -  We are Manufacturer of Daikin FTKM35U Inverter Split Air Conditioner, Cassette Air Conditioner, One Way Daikin FKA71CVM Cassette Air Conditioner, Dakin Cassette Type Air Conditioning and Domestic Fans, AC &amp; Coolers"><link rel="canonical" href="https://www.indiamart.com/quicksyssolutionsopc/aboutus.html"><link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.indiamart.com/quicksyssolutionsopc/aboutus.html"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" href="https://www.indiamart.com/favicon.ico"><link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><link rel="preload" as="style" href="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/css2"><link href="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/css2" rel="stylesheet" media="all" onload="this.media=&#39;all&#39;"><noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" /></noscript><link rel="stylesheet" href="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/header.v1.css"><style>#caas-global-header [class*="sm\:flex"],#caas-global-header [class*="md\:flex"],#caas-global-header [class*="lg\:flex"]{display:flex!important}</style><link rel="stylesheet" href="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/companyPage_44.css"><link rel="stylesheet" href="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/enqBl_desktop.min.css"><script defer="" src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/main_44.js"></script><script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Quicksys Solutions (OPC) Private Limited","address":{"@type":"PostalAddress","streetAddress":"Patna - 800014, Bihar, India","addressLocality":"Patna","addressRegion":"Bihar","addressCountry":"India","postalCode":"800014"},"foundingDate":"2018"}]</script><link rel="stylesheet" type="text/css" href="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/enquiry-shared_44.css"><link rel="stylesheet" type="text/css" href="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/OpenForm-461.css"><link rel="stylesheet" type="text/css" href="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/mdc-css-scrolltotop_44.css"><style type="text/css">
+.imas {
+	background: #fff;
+	border-radius: 0 0 5px 5px;
+	border: 1px solid #ccc;
+	border-top: 0;
+	text-align: left;
+}
+.imas li {
+	display: flex;
+  line-height: 1 ;
+  overflow: hidden;
+
+}
+.imas-item, .imas-tico, .imas-aico {
+	padding: 8px 4px 6px 0;
+	cursor: pointer;
+	display: flex;
+}
+.imas-text {
+  display : block;
+  text-indent: 5px;
+	flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #0c0f71; 
+  font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  padding-left: 20px
+}
+
+.imas-city-text {
+  text-indent: inherit !important;
+  padding-left: 12px;
+  color: #0c0f71;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.imas-item:hover,
+.imas-tico:hover,
+.imas-aico:hover,
+.imas-sel {
+	background: #ededed;
+}
+
+.imas-city-text:hover {
+    background: #eaeaf4
+}
+
+
+.sIcon {
+    background: url(//utils.imimg.com/globalhf/hrd-sp-v19.png);
+    width: 20px;
+    height: 20px;
+    top: 6px;
+    left: 2px;
+    position: absolute;
+    padding-top: 4px;
+    z-index: 1;
+}
+
+i.sIcon.nrml {
+    background-position: -377px -138px;
+}
+
+i.sIcon.pplr {
+    background-position: -413px -136px;
+}
+
+i.sIcon.rcnt {
+    background-position: -341px -136px;
+}
+
+.select-imas {
+    position: absolute;
+    top:100px;
+     display:block;
+}
+
+
+#css for isd sugg
+.dropdown dt a span,
+.dropdown dd ul li span {
+  width: 16px;
+  height: 11px;
+  background: url(//utils.imimg.com/imsrchui/imgs/country-v5.png);
+}
+
+.dropdown dt a span {
+  cursor: pointer;
+  display: block;
+}
+
+.dropdown dt a span {
+  margin: 4px 3px;
+}
+
+.as_arrow {
+  position: relative;
+  top: 40%;
+  margin-top: -19px;
+  left: 24px;
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 4px solid #555;
+}
+
+.value {
+  bottom: 5px;
+  left: 2px;
+  position: relative;
+  font-size: 14px;
+  font-family: Arial;
+}
+
+.dropdown dd ul li.selected {
+  background: #ddf;
+}
+
+.dropdown dd ul {
+  background: #ffffff none repeat scroll 0 0;
+  list-style: none;
+  padding: 5px;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: auto;
+  height: 155px;
+  overflow-y: scroll;
+  border: 1px solid #bdc7d8;
+}
+.dropdown dd {
+    position: relative;
+}
+
+.dropdown dd, .dropdown dt, .dropdown ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.dropdown dt a span, .dropdown dd ul li span {
+    width: 16px;
+    height: 11px;
+    background: url(//utils.imimg.com/imsrchui/imgs/country-v5.png);
+}
+
+.dropdown dd ul li span {
+    display: inline-block;
+}
+.dropdown dd ul li a {
+    color: black;
+    padding: 5px;
+    display: block;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: arial;
+    text-decoration: none;
+}
+
+.dropdown dt a {
+    display: inline-block;
+    width: 35px;
+    height: 20px;
+}
+
+.sugg_dim {
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 8;
+    display: block;
+    position: fixed;
+    top: 55px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+  .useMyLocation {
+    position: absolute;
+    top: 9px;
+    left: 6px;
+  } 
+
+  .use-my-location {
+    padding-left: 26px;
+  }
+
+
+  /* Make .imas-advanceProductSearch share styles with .imas-search_hme */
+  .imas-search_hme li div, .imas-advanceProductSearch li div   {
+    display: list-item;
+    text-align: inherit;
+    list-style: none;
+    cursor: pointer;
+    background: #fff;
+    position: relative;
+    font-family: arial;
+    padding: 0 10px !important;
+    }
+
+ .imas-search_hme li div, .imas-advanceProductSearch li div
+ {   font-family: arial !important;
+    font-size: 16px !important;
+    color: #333 !important;
+    padding: 11px 25px !important;
+    border-bottom: 1px solid #dddcdd !important;
+    display: block !important;
+    position: relative !important;
+}
+
+  .imas.imas-search_hme{
+    position: absolute !important;
+    width: 100% !important;
+    height:100% !important;
+    min-width: 150px !important;
+    left: 0px !important;
+    top: 58px !important;
+    z-index: 10000 !important;
+    display: block;
+    margin-top: 9px;
+    border: 0px;
+    border-radius: 0px;
+}
+.imas.imas-advanceProductSearch {
+    position: absolute !important;
+    height:100% !important;
+    min-width: 150px !important;
+    z-index: 10000 !important;
+    display: block;
+    border: 0px;
+    border-radius: 0px;
+}
+
+.imas-search_hme ul, .imas-advanceProductSearch ul {
+  border: 0px;
+  border-radius: 0px;
+  box-shadow: 0 10px 10px -9px hsla(0, 0%, 42%, .5);
+}
+
+.imas-search_hme .sIcon, .imas-advanceProductSearch .sIcon {
+    transform: scale(1.2); /* Zoom 1.2x */
+    top:8px;
+}
+
+.imas.imas-search_hme .imas-aico, .imas.imas-advanceProductSearch .imas-aico {
+    width: 30px;
+    background-image: url(https://utils.imimg.com/img/atSgstIcon.svg);
+    background-repeat: no-repeat !important;
+    height: 100%;
+    background-position: -110px 11px !important;
+    right: 12px;
+    position: absolute;
+    
+}
+
+.imas-search_hme li, .imas-advanceProductSearch li {
+  padding: 0 10px !important;
+  position: relative;
+}
+ 
+/* Categorized suggestions styles */
+.imas-categorized-suggestions {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.recent-searches {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.recent-searches-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.recent-searches-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recent-search-item, .category-item {
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  margin: 2px;
+  border-radius: 15px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.recent-search-item:hover, .category-item:hover {
+  background-color: #e0e0e0;
+}
+
+.category-container {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.category-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+</style><link rel="stylesheet" type="text/css" href="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/im_msg.min.css"><link rel="stylesheet" type="text/css" href="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/RatingsReviews_44.css"></head><body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NR4G"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><header id="caas-global-header" style="padding-bottom:60px"><div id="comp-header-1783916382307" data-component="desktop/header" data-props="{&quot;onHeaderClick&quot;:&quot;handleHeaderClick&quot;}"><div class="ver_cert pf w100 tb0 imgc im-header-ver-cert-modal Hd_dbn"><div class="container pr ts_inner_ln im-header-ver-cert-panel"><div class="clos_cert"><span class="clos_btn Hd_db cpo im-header-ver-cert-close-btn"></span><svg viewBox="0 0 30 30" class="im-header-ver-cert-close-icon"><path d="M30,1.363,28.637,0,15,13.637,1.363,0,0,1.363,13.637,15,0,28.637,1.363,30,15,16.363,28.637,30,30,28.637,16.363,15Z"></path></svg></div><div class="tac pb30 im-header-ver-cert-intro"><div class="certLgo df jcc aic pr im-header-ver-cert-logo-row"><svg class="svgIcn ts_tik" viewBox="0 0 14.97 10.75" aria-hidden="true"><path d="M4.536 10.454L.293 6.211a1 1 0 1 1 1.414-1.414l3.529 3.528L13.268.293a1.001 1.001 0 0 1 1.418 1.414l-8.489 8.486a1 1 0 0 1-.115.1 1 1 0 0 1-1.545.162z"></path></svg></div><div><div id="ver_company" class="fs20 fwn clr4 ls11"></div><div id="ver_city" class="fs14 fwn clr2 ls75 mt5"></div></div><p class="fs14 mt20 clr3">is a member of IndiaMART</p></div><div class="w1 ma df jcc certmain im-header-ver-cert-details"><p class="fs12 clr2 Hd_dbn" id="ver_det">Following details of the company have been verified</p><ul class="ts_cmpn_dtl fs14 ver_details"></ul></div><div class="pb30 w1 ma mt20 im-header-ver-cert-footer"><div class="fs11 tac clr3 mt20 lh15"><div id="ver_logo" class="ver_logo"><img alt="im Logo" class="mt10" src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/imLogo1.png"></div></div></div></div></div><header data-component="header" class="im-header-toolbar w-full h-full flex items-center gap-0 sm:gap-3 bg-white font-sans text-gray-800"><button class="lg:!hidden im-header-mobile-menu-btn flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 hover:bg-gray-100 transition-colors flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu w-6 h-6" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></button><a href="https://www.indiamart.com/" class="im-header-brand hidden sm:flex"><img alt="IndiaMART" class="im-header-brand-logo" src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/bl_mail_logo-min.png"></a><section class="im-header-search-strip flex-1 min-w-0 flex items-center px-2 sm:px-0"><section class="im-header-city-slot relative hidden sm:flex items-stretch"><button id="hd_searchPlace" type="button" class="im-header-city-trigger transition-all hover:bg-gray-50"><i class="im-header-svg-sprite im-header-svg-sprite--city-pin im-header-city-pin" aria-hidden="true"></i><span id="hd_usercity" class="im-header-city-label capitalize">Patna</span><span id="hd_usercity_new" class="im-header-hidden-city">Patna</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down im-header-city-chevron transition-transform flex-shrink-0 text-gray-400" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg><span id="citySearch" class="im-header-city-action"><i class="im-header-svg-sprite im-header-svg-sprite--city-search" aria-hidden="true"></i></span></button><div class="im-header-city-dropdown absolute left-0 border border-[#d6dbe3] z-[220] bg-white hidden"><div class="im-header-city-dropdown-inner relative"><input id="hd_city_sugg" placeholder="Enter city" class="im-header-city-input w-full pl-3 pr-10 py-2 text-sm border border-gray-300 rounded focus:border-[#00a699] focus:outline-none ui-autocomplete-input cls_city" autocomplete="off" type="text"><span class="absolute right-3 top-0 bottom-0 flex items-center pointer-events-none"><i class="im-header-svg-sprite im-header-svg-sprite--city-search im-header-city-input-icon" aria-hidden="true"></i></span></div></div></section><section class="im-header-search-shell flex-1 flex items-center relative overflow-hidden focus-within:border-[#00a699] transition-all rounded-r-lg"><form id="hdr_frm" class="flex-1 flex h-full items-center relative" action="https://dir.indiamart.com/search.mp?"><input id="search_string" class="im-header-search-input flex-1 h-full border-none outline-none bg-transparent ui-autocomplete-input" placeholder="Enter product / service to search" autocomplete="off" value="" name="ss"><a href="https://lens.indiamart.com/" class="group/lens p-1 sm:p-1.5 flex items-center justify-center transition-all h-full pr-1 sm:pr-2" title="Search by Image" target="_blank" rel="noreferrer"><i class="im-header-svg-sprite im-header-svg-sprite--photo-search shrink-0" aria-hidden="true"></i></a><button type="submit" id="btnSearch" class="im-header-search-submit cp flex items-center justify-center text-white transition-colors border-none shrink-0"><i class="im-header-svg-sprite im-header-svg-sprite--city-search im-header-search-submit-icon" aria-hidden="true"></i></button></form></section></section><aside class="im-header-actions hidden lg:flex items-center shrink-0"><a href="https://www.indiamart.com/quicksyssolutionsopc/aboutus.html#" id="pstBuy" class="pstBuy im-header-get-best-price-btn !hidden lg:!flex items-center text-[12px] font-semibold rounded transition-all duration-200 cursor-pointer whitespace-nowrap" style="background-color: white; color: rgb(29, 132, 128);">Get Best Price</a><nav class="im-header-desktop-nav flex items-center"><section id="exporters" class="im-header-top-nav-item shrink-0"><a href="https://export.indiamart.com/?VElogo=1" class="im-header-top-link !hidden md:!flex"><span class="im-header-sprite-icon im-header-sprite-icon--exporters" aria-hidden="true"></span><span class="im-header-top-link-label">Exporters</span></a></section><section class="im-header-top-nav-item im-header-nav-sell shrink-0"><a href="https://seller.indiamart.com/" class="im-header-top-link !hidden md:!flex"><span class="im-header-sprite-icon im-header-sprite-icon--sell" aria-hidden="true"></span><span class="im-header-top-link-label">Sell</span></a></section><section class="im-header-top-nav-item im-header-nav-help relative !hidden sm:!flex"><a href="https://help.indiamart.com/" class="im-header-top-link"><span class="im-header-sprite-icon im-header-sprite-icon--help" aria-hidden="true"></span><span class="im-header-top-link-label">Help</span></a></section><section id="message-center" class="im-header-top-nav-item im-header-nav-message shrink-0 relative"><button type="button" id="messageWid" class="im-header-top-link"><span class="im-header-top-link-icon-wrap"><span class="im-header-sprite-icon im-header-sprite-icon--message" aria-hidden="true"></span><span class="cntmsg im-header-top-link-badge hidden">0</span></span><span class="im-header-top-link-label">Messages</span></button></section><section class="im-header-top-nav-item relative"><button type="button" class="im-header-top-trigger"><span class="im-header-sprite-icon im-header-sprite-icon--user" aria-hidden="true"></span><span class="im-header-top-link-label im-header-top-link-label--with-chevron !hidden lg:!inline-flex">Sign In<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down im-header-top-link-chevron" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></span></button></section></nav></aside></header><div class="ch_clb" id="loginstrip"></div><div id="sign_in"></div><div id="bl_overlay_layer_v2"></div><div id="boxes"></div><div id="blk_ctpup" class="Hd_dbn"><div id="chat_popup"></div></div><div id="miclag"></div></div></header><div data-company-layout="true" data-page-type="aboutus" data-seller-tier="fcp"><header id="company-header" class="company-header header-no-logo"><div class="header-content"><h1>Quicksys Solutions (OPC) Private Limited</h1><div class="metadata-row"><p class="detail-item"><img class="header-icon header-icon--location" src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5.svg" width="10.598" height="15.14" alt="" aria-hidden="true"><span>Patna</span></p><p class="detail-item"><span role="button" tabindex="0" class="detail-item-btn vs-trigger" title="View verification details"><img class="header-icon header-icon--verified" src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(1).svg" width="16" height="17" alt="" aria-hidden="true"><span>GST</span></span></p><p class="detail-item"><img class="header-icon header-icon--member" src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(2).svg" width="11" height="16" alt="" aria-hidden="true"><span>9 yrs</span></p><a href="https://www.indiamart.com/quicksyssolutionsopc/testimonial.html" class="rating-container rating-container--link" aria-label="4.7 out of 5 stars from 3 votes. View ratings and reviews"><div class="stars-wrapper" style="--rating:4.7"><div class="stars-bg" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(3).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(3).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(3).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(3).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(3).svg" alt="" aria-hidden="true"></div><div class="stars-fill" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(4).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(4).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(4).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(4).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(4).svg" alt="" aria-hidden="true"></div></div><span class="rating-value">4.7</span><span class="vote-count">(3)</span></a><p class="detail-item response-rate"><img class="header-icon header-icon--response" src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(5).svg" width="16" height="16" alt="" aria-hidden="true"><span><strong>43%</strong> Response rate</span></p></div></div><div class="company-actions"><div data-island="PhoneReveal" data-props="{&quot;section&quot;:&quot;Header&quot;,&quot;ctaName&quot;:&quot;Call Now&quot;,&quot;className&quot;:&quot;btn-view-mobile&quot;,&quot;iconName&quot;:&quot;phone&quot;,&quot;channel&quot;:&quot;sms&quot;,&quot;heading&quot;:&quot;Contact us&quot;}" data-hydrate="immediate" data-hydrated=""><button type="button" class="btn-view-mobile" data-cta="Call Now" data-section="Header"><span class="pns-icon" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(6).svg" width="18" height="18" aria-hidden="true" alt=""></span>Call Now</button></div></div></header><div id="nav-sticky-sentinel" style="height:0;margin:0;padding:0"></div><div><nav class="navigation"><ul class="nav-list"><li class="nav-item"><a href="https://www.indiamart.com/quicksyssolutionsopc/" class="nav-link" id="nav-trigger-homepage">Home</a></li><li class="nav-item has-dropdown nav-item--products"><a href="https://www.indiamart.com/quicksyssolutionsopc/products-and-services.html" class="nav-link" id="nav-trigger-catindex" aria-haspopup="true" aria-expanded="false" aria-controls="nav-dropdown-catindex">Our Products</a><div class="nav-dropdown-wrapper"><section data-island="NavProductsDropdown" data-props="{&quot;mega&quot;:true,&quot;catLink&quot;:&quot;/quicksyssolutionsopc/products-and-services.html&quot;}" data-hydrate="immediate" id="nav-dropdown-catindex" classname="nav-dropdown-placeholder" aria-labelledby="nav-trigger-catindex" data-hydrated=""><ul class="dropdown-menu dropdown-menu--mega" role="menu"><li class="dropdown-item dropdown-item--category" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/daikin-split-air-conditioner.html" class="dropdown-link dropdown-link--category" role="menuitem">Daikin Split Air Conditioner</a><ul class="dropdown-sublist" role="menu"><li class="dropdown-subitem" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/daikin-split-air-conditioner.html#2849014229948" class="dropdown-sublink" role="menuitem">Daikin FTKM35U Inverter Split Air Conditioner</a></li><li class="dropdown-subitem" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/daikin-split-air-conditioner.html#2849014034688" class="dropdown-sublink" role="menuitem">Daikin FTL50 Split Air Conditioner</a></li><li class="dropdown-subitem" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/daikin-split-air-conditioner.html#2849014161988" class="dropdown-sublink" role="menuitem">Daikin MTKM50U Split Air Conditioner</a></li><li class="dropdown-subitem" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/daikin-split-air-conditioner.html#19987657891" class="dropdown-sublink" role="menuitem">Daikin FTX35AXV1 Split Air Conditioner</a></li><li class="dropdown-subitem dropdown-subitem--more" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/daikin-split-air-conditioner.html" class="dropdown-sublink dropdown-sublink--more" role="menuitem">...more</a></li></ul></li><li class="dropdown-item dropdown-item--category" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/vrf-system.html" class="dropdown-link dropdown-link--category" role="menuitem">Vrf System</a><ul class="dropdown-sublist" role="menu"><li class="dropdown-subitem" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/vrf-system.html#2856813292055" class="dropdown-sublink" role="menuitem">Cassette Air Conditioner</a></li><li class="dropdown-subitem" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/vrf-system.html#2856813292255" class="dropdown-sublink" role="menuitem">Industrial Air Ventilation System</a></li><li class="dropdown-subitem" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/vrf-system.html#2855466098233" class="dropdown-sublink" role="menuitem">Daikin VRV 4 HP System</a></li><li class="dropdown-subitem dropdown-subitem--more" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/vrf-system.html" class="dropdown-sublink dropdown-sublink--more" role="menuitem">...more</a></li></ul></li><li class="dropdown-item dropdown-item--category" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/cassette-air-conditioner.html" class="dropdown-link dropdown-link--category" role="menuitem">Cassette Air Conditioner</a><ul class="dropdown-sublist" role="menu"><li class="dropdown-subitem" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/cassette-air-conditioner.html#23432582891" class="dropdown-sublink" role="menuitem">One Way Daikin FKA71CVM Cassette Air Conditioner</a></li><li class="dropdown-subitem" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/cassette-air-conditioner.html#2849175144648" class="dropdown-sublink" role="menuitem">Quicksys solutions OPC Pvt</a></li><li class="dropdown-subitem" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/cassette-air-conditioner.html#2849011074373" class="dropdown-sublink" role="menuitem">Daikin FCVF30ARV16 Cassette Air Conditioner</a></li><li class="dropdown-subitem dropdown-subitem--more" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/cassette-air-conditioner.html" class="dropdown-sublink dropdown-sublink--more" role="menuitem">...more</a></li></ul></li><li class="dropdown-item dropdown-item--category" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/split-air-conditioner.html" class="dropdown-link dropdown-link--category" role="menuitem">Split Air Conditioner</a><ul class="dropdown-sublist" role="menu"><li class="dropdown-subitem" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/split-air-conditioner.html#2856813291948" class="dropdown-sublink" role="menuitem">Dakin Cassette Type Air Conditioning</a></li><li class="dropdown-subitem" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/split-air-conditioner.html#2850658588412" class="dropdown-sublink" role="menuitem">Split Air Conditioners</a></li><li class="dropdown-subitem dropdown-subitem--more" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/split-air-conditioner.html" class="dropdown-sublink dropdown-sublink--more" role="menuitem">...more</a></li></ul></li><li class="dropdown-item dropdown-item--category" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/vrv-system.html" class="dropdown-link dropdown-link--category" role="menuitem">VRV System</a><ul class="dropdown-sublist" role="menu"><li class="dropdown-subitem" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/vrv-system.html#23432580162" class="dropdown-sublink" role="menuitem">Daikin RXQ6ARY6 VRV X System</a></li><li class="dropdown-subitem" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/vrv-system.html#2851674846530" class="dropdown-sublink" role="menuitem">VRV Indoor Units</a></li><li class="dropdown-subitem" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/vrv-system.html#2851674854733" class="dropdown-sublink" role="menuitem">Daikin Side Discharge Vrv Outdoor Unit</a></li><li class="dropdown-subitem dropdown-subitem--more" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/vrv-system.html" class="dropdown-sublink dropdown-sublink--more" role="menuitem">...more</a></li></ul></li><li class="dropdown-item dropdown-item--category" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/ducted-air-conditioner.html" class="dropdown-link dropdown-link--category" role="menuitem">Ducted Air Conditioner</a><ul class="dropdown-sublist" role="menu"><li class="dropdown-subitem" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/ducted-air-conditioner.html#2849013884488" class="dropdown-sublink" role="menuitem">Daikin Ductable Air Conditioner</a></li><li class="dropdown-subitem" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/ducted-air-conditioner.html#23432578997" class="dropdown-sublink" role="menuitem">Daikin FDMF36CRV16 Ducted Air Conditioner</a></li><li class="dropdown-subitem dropdown-subitem--more" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/ducted-air-conditioner.html" class="dropdown-sublink dropdown-sublink--more" role="menuitem">...more</a></li></ul></li><li class="dropdown-item dropdown-item--category" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/tower-air-conditioner.html" class="dropdown-link dropdown-link--category" role="menuitem">Tower Air Conditioner</a><ul class="dropdown-sublist" role="menu"><li class="dropdown-subitem" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/tower-air-conditioner.html#2849008734788" class="dropdown-sublink" role="menuitem">Daikin FVQ125CVEB Tower Air Conditioner</a></li><li class="dropdown-subitem dropdown-subitem--more" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/tower-air-conditioner.html" class="dropdown-sublink dropdown-sublink--more" role="menuitem">...more</a></li></ul></li><li class="dropdown-item dropdown-item--category" role="none" style="display: flex; flex-direction: column; justify-content: center;"><a href="https://www.indiamart.com/quicksyssolutionsopc/products-and-services.html" class="dropdown-link dropdown-link--category" role="menuitem" style="color: var(--secondary); font-weight: 600;">View all categories →</a></li></ul></section></div></li><li class="nav-item has-dropdown"><a href="https://www.indiamart.com/quicksyssolutionsopc/aboutus.html" class="nav-link nav-link--active" id="nav-trigger-aboutus" aria-haspopup="true" aria-expanded="false" aria-controls="nav-dropdown-aboutus">About Us</a><div class="nav-dropdown-wrapper"><section data-island="NavProductsDropdown" data-props="{&quot;subLinks&quot;:[{&quot;label&quot;:&quot;Testimonial&quot;,&quot;link&quot;:&quot;/quicksyssolutionsopc/testimonial.html&quot;,&quot;pageType&quot;:&quot;testimonial&quot;}],&quot;mega&quot;:false,&quot;catLink&quot;:&quot;/quicksyssolutionsopc/aboutus.html&quot;}" data-hydrate="immediate" id="nav-dropdown-aboutus" classname="nav-dropdown-placeholder" aria-labelledby="nav-trigger-aboutus" data-hydrated=""><ul class="dropdown-menu dropdown-menu--simple" role="menu"><li class="dropdown-item" role="none"><a href="https://www.indiamart.com/quicksyssolutionsopc/testimonial.html" class="dropdown-link" role="menuitem">Testimonial</a></li></ul></section></div></li><li class="nav-item"><a href="https://www.indiamart.com/quicksyssolutionsopc/videos.html" class="nav-link" id="nav-trigger-videos">Videos</a></li><li class="nav-item"><a href="https://www.indiamart.com/quicksyssolutionsopc/photos.html" class="nav-link" id="nav-trigger-gallery">Photos</a></li><li class="nav-item"><a href="https://www.indiamart.com/quicksyssolutionsopc/enquiry.html" class="nav-link" id="nav-trigger-enquiry">Contact Us</a></li></ul><div class="nav-sticky-phone"><div data-island="PhoneReveal" data-props="{&quot;section&quot;:&quot;StickyNav&quot;,&quot;ctaName&quot;:&quot;Call Now&quot;,&quot;className&quot;:&quot;btn-view-mobile-sticky&quot;,&quot;iconName&quot;:&quot;phone&quot;,&quot;channel&quot;:&quot;sms&quot;,&quot;heading&quot;:&quot;Contact us&quot;}" data-hydrate="immediate" data-hydrated=""><button type="button" class="btn-view-mobile-sticky" data-cta="Call Now" data-section="StickyNav"><span class="pns-icon" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(6).svg" width="18" height="18" aria-hidden="true" alt=""></span>Call Now</button></div></div><div class="contact-supplier-wrapper"><div data-island="EnquiryButton" data-props="{&quot;ctaName&quot;:&quot;Contact Supplier&quot;,&quot;section&quot;:&quot;Navigation&quot;,&quot;heading&quot;:&quot;Tell us your requirement&quot;,&quot;className&quot;:&quot;btn-contact-supplier&quot;}" data-hydrate="immediate" data-hydrated=""><button type="button" class="btn-contact-supplier" data-cta="Contact Supplier" data-section="Navigation"><img class="icon-send" src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(7).svg" width="17" height="17" aria-hidden="true" alt="">Contact Supplier</button></div></div></nav></div><div><div data-island="VerifiedSupplierModal" data-props="{&quot;gstNumber&quot;:&quot;10**********1Z9&quot;,&quot;isEmailVerified&quot;:true,&quot;directorProprietor&quot;:&quot;S Saurabh (Business Head)&quot;,&quot;fullAddress&quot;:&quot;Patna&quot;,&quot;sellerPns&quot;:&quot;+91-8047805988&quot;,&quot;pincode&quot;:&quot;800014&quot;,&quot;country&quot;:&quot;India&quot;,&quot;variant&quot;:&quot;grey&quot;}" data-hydrate="immediate" data-hydrated=""></div></div><script>
+(function(){
+window.openchildts1 = function(url, glid) {
+try {
+var screenHeight = window.screen.height;
+var screenWidth = window.screen.width;
+var width = 673;
+var height = Math.floor(screenHeight * 0.8 * 0.85);
+var top = Math.floor(screenHeight * 0.2 * 0.8);
+var left = Math.floor(screenWidth * 0.402);
+var features = "toolbar=no,location=no,status=yes,scrollbars=yes,menubar=no,resizable=yes,top=" + top + ",left=" + left + ",width=" + width + ",height=" + height;
+var msgWindow = window.open(url, "TrustSealPopup", features);
+if (msgWindow) msgWindow.focus();
+} catch (error) {
+if (typeof window.reqFormGATrack === 'function') {
+var GaMsg = error.message + (error.stack ? error.stack.split("\n")[1] : "");
+window.reqFormGATrack("pre66jsfile", "openchildts1", GaMsg, glid);
+} else {
+}
+}
+};
+var trigger = document.querySelector(".ts-trigger");
+if (trigger) {
+trigger.addEventListener("click", function(e) {
+e.preventDefault();
+window.openchildts1(this.href, "39820220");
+});
+}
+var triggers = document.querySelectorAll('.vs-trigger');
+for (var i = 0; i < triggers.length; i++) {
+triggers[i].addEventListener('click', function() {
+document.dispatchEvent(new CustomEvent('vs-modal:open'));
+});
+}
+})();
+</script><div class="page-with-sidebar"><div class="sidebar-column"><div class="fcp-ad-slot" id="Sidebar_Top" aria-label="Advertisement"><ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-0673059417528889" data-ad-slot="2905400834"></ins></div><nav class="profile-nav" aria-label="Profile navigation"><a class="profile-nav__heading" href="https://www.indiamart.com/quicksyssolutionsopc/aboutus.html">About Us</a><ul class="profile-nav__list"><li class="profile-nav__item"><a class="profile-nav__link" href="https://www.indiamart.com/quicksyssolutionsopc/testimonial.html">Testimonial</a></li></ul></nav><aside class="cat-sidebar" aria-label="Product categories"><div class="cat-sidebar__inner"><a href="https://www.indiamart.com/quicksyssolutionsopc/products-and-services.html" class="cat-sidebar__heading">Our Products</a><nav aria-label="Category navigation"><ul class="cat-sidebar__list"><li class="cat-sidebar__item"><div class="cat-sidebar__item-header"><a href="https://www.indiamart.com/quicksyssolutionsopc/daikin-split-air-conditioner.html" class="cat-sidebar__cat-name">Daikin Split Air Conditioner</a><button type="button" class="cat-sidebar__toggle" aria-expanded="false" aria-label="Toggle Daikin Split Air Conditioner"></button></div><a href="https://www.indiamart.com/quicksyssolutionsopc/daikin-split-air-conditioner.html" class="cat-sidebar__count">4 products available</a><ul class="cat-sidebar__products"><li><a href="https://www.indiamart.com/quicksyssolutionsopc/daikin-split-air-conditioner.html#2849014229948" class="cat-sidebar__product-link">Daikin FTKM35U Inverter Split Air Conditioner</a></li><li><a href="https://www.indiamart.com/quicksyssolutionsopc/daikin-split-air-conditioner.html#2849014034688" class="cat-sidebar__product-link">Daikin FTL50 Split Air Conditioner</a></li><li><a href="https://www.indiamart.com/quicksyssolutionsopc/daikin-split-air-conditioner.html#2849014161988" class="cat-sidebar__product-link">Daikin MTKM50U Split Air Conditioner</a></li><li><a href="https://www.indiamart.com/quicksyssolutionsopc/daikin-split-air-conditioner.html#19987657891" class="cat-sidebar__product-link">Daikin FTX35AXV1 Split Air Conditioner</a></li></ul></li><li class="cat-sidebar__item"><div class="cat-sidebar__item-header"><a href="https://www.indiamart.com/quicksyssolutionsopc/vrf-system.html" class="cat-sidebar__cat-name">Vrf System</a><button type="button" class="cat-sidebar__toggle" aria-expanded="false" aria-label="Toggle Vrf System"></button></div><a href="https://www.indiamart.com/quicksyssolutionsopc/vrf-system.html" class="cat-sidebar__count">3 products available</a><ul class="cat-sidebar__products"><li><a href="https://www.indiamart.com/quicksyssolutionsopc/vrf-system.html#2856813292055" class="cat-sidebar__product-link">Cassette Air Conditioner</a></li><li><a href="https://www.indiamart.com/quicksyssolutionsopc/vrf-system.html#2856813292255" class="cat-sidebar__product-link">Industrial Air Ventilation System</a></li><li><a href="https://www.indiamart.com/quicksyssolutionsopc/vrf-system.html#2855466098233" class="cat-sidebar__product-link">Daikin VRV 4 HP System</a></li></ul></li><li class="cat-sidebar__item"><div class="cat-sidebar__item-header"><a href="https://www.indiamart.com/quicksyssolutionsopc/cassette-air-conditioner.html" class="cat-sidebar__cat-name">Cassette Air Conditioner</a><button type="button" class="cat-sidebar__toggle" aria-expanded="false" aria-label="Toggle Cassette Air Conditioner"></button></div><a href="https://www.indiamart.com/quicksyssolutionsopc/cassette-air-conditioner.html" class="cat-sidebar__count">3 products available</a><ul class="cat-sidebar__products"><li><a href="https://www.indiamart.com/quicksyssolutionsopc/cassette-air-conditioner.html#23432582891" class="cat-sidebar__product-link">One Way Daikin FKA71CVM Cassette Air Conditioner</a></li><li><a href="https://www.indiamart.com/quicksyssolutionsopc/cassette-air-conditioner.html#2849175144648" class="cat-sidebar__product-link">Quicksys solutions OPC Pvt</a></li><li><a href="https://www.indiamart.com/quicksyssolutionsopc/cassette-air-conditioner.html#2849011074373" class="cat-sidebar__product-link">Daikin FCVF30ARV16 Cassette Air Conditioner</a></li></ul></li><li class="cat-sidebar__item"><div class="cat-sidebar__item-header"><a href="https://www.indiamart.com/quicksyssolutionsopc/split-air-conditioner.html" class="cat-sidebar__cat-name">Split Air Conditioner</a><button type="button" class="cat-sidebar__toggle" aria-expanded="false" aria-label="Toggle Split Air Conditioner"></button></div><a href="https://www.indiamart.com/quicksyssolutionsopc/split-air-conditioner.html" class="cat-sidebar__count">2 products available</a><ul class="cat-sidebar__products"><li><a href="https://www.indiamart.com/quicksyssolutionsopc/split-air-conditioner.html#2856813291948" class="cat-sidebar__product-link">Dakin Cassette Type Air Conditioning</a></li><li><a href="https://www.indiamart.com/quicksyssolutionsopc/split-air-conditioner.html#2850658588412" class="cat-sidebar__product-link">Split Air Conditioners</a></li></ul></li><li class="cat-sidebar__item"><div class="cat-sidebar__item-header"><a href="https://www.indiamart.com/quicksyssolutionsopc/vrv-system.html" class="cat-sidebar__cat-name">VRV System</a><button type="button" class="cat-sidebar__toggle" aria-expanded="false" aria-label="Toggle VRV System"></button></div><a href="https://www.indiamart.com/quicksyssolutionsopc/vrv-system.html" class="cat-sidebar__count">3 products available</a><ul class="cat-sidebar__products"><li><a href="https://www.indiamart.com/quicksyssolutionsopc/vrv-system.html#23432580162" class="cat-sidebar__product-link">Daikin RXQ6ARY6 VRV X System</a></li><li><a href="https://www.indiamart.com/quicksyssolutionsopc/vrv-system.html#2851674846530" class="cat-sidebar__product-link">VRV Indoor Units</a></li><li><a href="https://www.indiamart.com/quicksyssolutionsopc/vrv-system.html#2851674854733" class="cat-sidebar__product-link">Daikin Side Discharge Vrv Outdoor Unit</a></li></ul></li><li class="cat-sidebar__item"><div class="cat-sidebar__item-header"><a href="https://www.indiamart.com/quicksyssolutionsopc/ducted-air-conditioner.html" class="cat-sidebar__cat-name">Ducted Air Conditioner</a><button type="button" class="cat-sidebar__toggle" aria-expanded="false" aria-label="Toggle Ducted Air Conditioner"></button></div><a href="https://www.indiamart.com/quicksyssolutionsopc/ducted-air-conditioner.html" class="cat-sidebar__count">2 products available</a><ul class="cat-sidebar__products"><li><a href="https://www.indiamart.com/quicksyssolutionsopc/ducted-air-conditioner.html#2849013884488" class="cat-sidebar__product-link">Daikin Ductable Air Conditioner</a></li><li><a href="https://www.indiamart.com/quicksyssolutionsopc/ducted-air-conditioner.html#23432578997" class="cat-sidebar__product-link">Daikin FDMF36CRV16 Ducted Air Conditioner</a></li></ul></li><li class="cat-sidebar__item"><div class="cat-sidebar__item-header"><a href="https://www.indiamart.com/quicksyssolutionsopc/tower-air-conditioner.html" class="cat-sidebar__cat-name">Tower Air Conditioner</a><button type="button" class="cat-sidebar__toggle" aria-expanded="false" aria-label="Toggle Tower Air Conditioner"></button></div><a href="https://www.indiamart.com/quicksyssolutionsopc/tower-air-conditioner.html" class="cat-sidebar__count">1 product available</a><ul class="cat-sidebar__products"><li><a href="https://www.indiamart.com/quicksyssolutionsopc/tower-air-conditioner.html#2849008734788" class="cat-sidebar__product-link">Daikin FVQ125CVEB Tower Air Conditioner</a></li></ul></li><li class="cat-sidebar__item"><div class="cat-sidebar__item-header"><a href="https://www.indiamart.com/quicksyssolutionsopc/industrial-cooler.html" class="cat-sidebar__cat-name">Industrial cooler</a><button type="button" class="cat-sidebar__toggle" aria-expanded="false" aria-label="Toggle Industrial cooler"></button></div><a href="https://www.indiamart.com/quicksyssolutionsopc/industrial-cooler.html" class="cat-sidebar__count">1 product available</a><ul class="cat-sidebar__products"><li><a href="https://www.indiamart.com/quicksyssolutionsopc/industrial-cooler.html#2857760132291" class="cat-sidebar__product-link">Industrial Evaporative Air Coolers</a></li></ul></li></ul></nav><a href="https://www.indiamart.com/quicksyssolutionsopc/products-and-services.html" class="cat-sidebar__viewall">+View All</a></div><script>
+(function(){
+document.querySelectorAll('.cat-sidebar__toggle').forEach(function(btn){
+btn.addEventListener('click',function(){
+var item=btn.closest('.cat-sidebar__item');
+var isExpanded=item.hasAttribute('data-expanded');
+if(isExpanded){item.removeAttribute('data-expanded')}
+else{item.setAttribute('data-expanded','')}
+btn.setAttribute('aria-expanded',String(!isExpanded));
+});
+});
+})();
+</script></aside><div class="fcp-ad-slot" id="div-gpt-ad-1692184805755-0" aria-label="Advertisement" style="width:160px"></div></div><main class="page-with-sidebar__content"><div class="aboutus-page container mt-lg"><section class="cat-slider" aria-label="Product categories"><div class="cat-slider__header"><h2 class="cat-slider__title">Our Products</h2><span><a class="cat-slider__viewall" href="https://www.indiamart.com/quicksyssolutionsopc/products-and-services.html">View All</a></span></div><div class="cat-slider__viewport"><ul class="cat-slider__track" role="list"><li id="88751466" class="cat-slider__card"><a href="https://www.indiamart.com/quicksyssolutionsopc/daikin-split-air-conditioner.html"><figure class="cat-slider__figure"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/daikin-ftkm35tv-inverter-split-air-conditioner-250x250.jpg" alt="Daikin Split Air Conditioner" width="184" height="184" loading="lazy"></figure><div class="cat-slider__info"><p class="cat-slider__name">Daikin Split Air Conditioner</p><p class="cat-slider__count">4 products available</p></div></a></li><li id="88751225" class="cat-slider__card"><a href="https://www.indiamart.com/quicksyssolutionsopc/vrf-system.html"><figure class="cat-slider__figure"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/quicksys-solutions-opc-pvt-ltd-250x250.jpeg" alt="Vrf System" width="184" height="184" loading="lazy"></figure><div class="cat-slider__info"><p class="cat-slider__name">Vrf System</p><p class="cat-slider__count">3 products available</p></div></a></li><li id="110515952" class="cat-slider__card"><a href="https://www.indiamart.com/quicksyssolutionsopc/cassette-air-conditioner.html"><figure class="cat-slider__figure"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/one-way-daikin-fka71cvm-cassette-air-conditioner-250x250.jpg" alt="Cassette Air Conditioner" width="184" height="184" loading="lazy"></figure><div class="cat-slider__info"><p class="cat-slider__name">Cassette Air Conditioner</p><p class="cat-slider__count">3 products available</p></div></a></li><li id="110515923" class="cat-slider__card"><a href="https://www.indiamart.com/quicksyssolutionsopc/split-air-conditioner.html"><figure class="cat-slider__figure"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/screenshot-2022-12-10-22-41-33-073-com-google-android-apps-docs-250x250.jpg" alt="Split Air Conditioner" width="184" height="184" loading="lazy"></figure><div class="cat-slider__info"><p class="cat-slider__name">Split Air Conditioner</p><p class="cat-slider__count">2 products available</p></div></a></li><li id="110515956" class="cat-slider__card"><a href="https://www.indiamart.com/quicksyssolutionsopc/vrv-system.html"><figure class="cat-slider__figure"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/vrv-systems-250x250.jpg" alt="VRV System" width="184" height="184" loading="lazy"></figure><div class="cat-slider__info"><p class="cat-slider__name">VRV System</p><p class="cat-slider__count">3 products available</p></div></a></li><li id="110515966" class="cat-slider__card"><a href="https://www.indiamart.com/quicksyssolutionsopc/ducted-air-conditioner.html"><figure class="cat-slider__figure"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/daikin-fdmf36crv16-ducted-air-conditioner-250x250.jpg" alt="Ducted Air Conditioner" width="184" height="184" loading="lazy"></figure><div class="cat-slider__info"><p class="cat-slider__name">Ducted Air Conditioner</p><p class="cat-slider__count">2 products available</p></div></a></li><li id="110515972" class="cat-slider__card"><a href="https://www.indiamart.com/quicksyssolutionsopc/tower-air-conditioner.html"><figure class="cat-slider__figure"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/may-lanh-tu-dung-daikin-fva71amvm-inverter-40hp-3-pha-1-250x250.jpg" alt="Tower Air Conditioner" width="184" height="184" loading="lazy"></figure><div class="cat-slider__info"><p class="cat-slider__name">Tower Air Conditioner</p><p class="cat-slider__count">1 product available</p></div></a></li><li id="167444778" class="cat-slider__card"><a href="https://www.indiamart.com/quicksyssolutionsopc/industrial-cooler.html"><figure class="cat-slider__figure"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/product-jpeg-250x250.jpeg" alt="Industrial cooler" width="184" height="184" loading="lazy"></figure><div class="cat-slider__info"><p class="cat-slider__name">Industrial cooler</p><p class="cat-slider__count">1 product available</p></div></a></li></ul><button type="button" class="cat-slider__arrow cat-slider__arrow--prev" aria-label="Previous" hidden="">‹</button><button type="button" class="cat-slider__arrow cat-slider__arrow--next" aria-label="Next">›</button></div></section><section class="aboutus-intro"><h2 class="aboutus-heading">Quicksys Solutions (OPC) Private Limited</h2><div class="aboutus-desc">Established in the year 2018, Patna, Bihar, we "Quicksys Solutions (OPC) Private Limited" are a Private Limited Firm, engaged as the Wholesaler and Trader of Split Air Conditioner, Ducted Air Conditioner, Cassette Air Conditioner, VRV System, Tower Air Conditioner, Ventilation System, Many More.</div></section><section class="album-section card" aria-label="Company Album"><h2 class="album-section__heading">Company Album</h2><div class="album-section__viewport" data-album-images="[{&quot;display&quot;:&quot;https://5.imimg.com/data5/SELLER/Default/2022/12/JX/VD/BB/39820220/daikin-air-conditioning-solutions-plaza-chennai-dslbzj63vc-1000x1000.jpg&quot;,&quot;full&quot;:&quot;https://5.imimg.com/data5/SELLER/Default/2022/12/JX/VD/BB/39820220/daikin-air-conditioning-solutions-plaza-chennai-dslbzj63vc-1000x1000.jpg&quot;,&quot;bimg&quot;:&quot;https://5.imimg.com/data5/SELLER/Default/2022/12/JX/VD/BB/39820220/daikin-air-conditioning-solutions-plaza-chennai-dslbzj63vc-1000x1000.jpg&quot;,&quot;thumb&quot;:&quot;https://5.imimg.com/data5/SELLER/Default/2022/12/JX/VD/BB/39820220/daikin-air-conditioning-solutions-plaza-chennai-dslbzj63vc-125x125.jpg&quot;,&quot;alt&quot;:&quot;Our Warehouse&quot;},{&quot;display&quot;:&quot;https://5.imimg.com/data5/NSDMERP/Board/2022/11/HG/QN/JB/39820220/39820220-board-1669188482338-1000x1000.jpg&quot;,&quot;full&quot;:&quot;https://5.imimg.com/data5/NSDMERP/Board/2022/11/HG/QN/JB/39820220/39820220-board-1669188482338-1000x1000.jpg&quot;,&quot;bimg&quot;:&quot;https://5.imimg.com/data5/NSDMERP/Board/2022/11/HG/QN/JB/39820220/39820220-board-1669188482338-1000x1000.jpg&quot;,&quot;thumb&quot;:&quot;https://5.imimg.com/data5/NSDMERP/Board/2022/11/HG/QN/JB/39820220/39820220-board-1669188482338-125x125.jpg&quot;,&quot;alt&quot;:&quot;Company Image&quot;},{&quot;display&quot;:&quot;https://5.imimg.com/data5/NSDMERP/Location/2022/11/DN/JH/VO/39820220/39820220-location-1669188487017-1000x1000.jpg&quot;,&quot;full&quot;:&quot;https://5.imimg.com/data5/NSDMERP/Location/2022/11/DN/JH/VO/39820220/39820220-location-1669188487017-1000x1000.jpg&quot;,&quot;bimg&quot;:&quot;https://5.imimg.com/data5/NSDMERP/Location/2022/11/DN/JH/VO/39820220/39820220-location-1669188487017-1000x1000.jpg&quot;,&quot;thumb&quot;:&quot;https://5.imimg.com/data5/NSDMERP/Location/2022/11/DN/JH/VO/39820220/39820220-location-1669188487017-125x125.jpg&quot;,&quot;alt&quot;:&quot;Company Image&quot;},{&quot;display&quot;:&quot;https://5.imimg.com/data5/NSDMERP/Location/2022/11/FH/OS/LH/39820220/39820220-location-1669188490816-1000x1000.jpg&quot;,&quot;full&quot;:&quot;https://5.imimg.com/data5/NSDMERP/Location/2022/11/FH/OS/LH/39820220/39820220-location-1669188490816-1000x1000.jpg&quot;,&quot;bimg&quot;:&quot;https://5.imimg.com/data5/NSDMERP/Location/2022/11/FH/OS/LH/39820220/39820220-location-1669188490816-1000x1000.jpg&quot;,&quot;thumb&quot;:&quot;https://5.imimg.com/data5/NSDMERP/Location/2022/11/FH/OS/LH/39820220/39820220-location-1669188490816-125x125.jpg&quot;,&quot;alt&quot;:&quot;Company Image&quot;},{&quot;display&quot;:&quot;https://5.imimg.com/data5/NSDMERP/Location/2022/11/TI/QG/EC/39820220/39820220-location-1669188494318-1000x1000.jpg&quot;,&quot;full&quot;:&quot;https://5.imimg.com/data5/NSDMERP/Location/2022/11/TI/QG/EC/39820220/39820220-location-1669188494318-1000x1000.jpg&quot;,&quot;bimg&quot;:&quot;https://5.imimg.com/data5/NSDMERP/Location/2022/11/TI/QG/EC/39820220/39820220-location-1669188494318-1000x1000.jpg&quot;,&quot;thumb&quot;:&quot;https://5.imimg.com/data5/NSDMERP/Location/2022/11/TI/QG/EC/39820220/39820220-location-1669188494318-125x125.jpg&quot;,&quot;alt&quot;:&quot;Company Image&quot;}]"><div class="album-section__track" role="list"><figure class="album-section__slide" role="listitem" data-index="0"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/daikin-air-conditioning-solutions-plaza-chennai-dslbzj63vc-1000x1000.jpg" width="184" height="184" alt="Our Warehouse" loading="lazy"></figure><figure class="album-section__slide" role="listitem" data-index="1"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/39820220-board-1669188482338-1000x1000.jpg" width="184" height="184" alt="Company Image" loading="lazy"></figure><figure class="album-section__slide" role="listitem" data-index="2"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/39820220-location-1669188487017-1000x1000.jpg" width="184" height="184" alt="Company Image" loading="lazy"></figure><figure class="album-section__slide" role="listitem" data-index="3"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/39820220-location-1669188490816-1000x1000.jpg" width="184" height="184" alt="Company Image" loading="lazy"></figure><figure class="album-section__slide" role="listitem" data-index="4"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/39820220-location-1669188494318-1000x1000.jpg" width="184" height="184" alt="Company Image" loading="lazy"></figure></div><button type="button" class="album-section__arrow album-section__arrow--prev" aria-label="Previous" hidden="">‹</button><button type="button" class="album-section__arrow album-section__arrow--next" aria-label="Next" hidden="">›</button></div></section><div class="extended-sections"><article class="profile-section"><h2>Our Warehouse</h2><div class="profile-section__body"><div class="profile-section__media" data-profile-images="[{&quot;full&quot;:&quot;https://5.imimg.com/data5/SELLER/Default/2022/12/JX/VD/BB/39820220/daikin-air-conditioning-solutions-plaza-chennai-dslbzj63vc-1000x1000.jpg&quot;,&quot;bimg&quot;:&quot;https://5.imimg.com/data5/SELLER/Default/2022/12/JX/VD/BB/39820220/daikin-air-conditioning-solutions-plaza-chennai-dslbzj63vc-1000x1000.jpg&quot;,&quot;thumb&quot;:&quot;https://5.imimg.com/data5/SELLER/Default/2022/12/JX/VD/BB/39820220/daikin-air-conditioning-solutions-plaza-chennai-dslbzj63vc-1000x1000.jpg&quot;}]"><figure class="profile-section__main-img"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/daikin-air-conditioning-solutions-plaza-chennai-dslbzj63vc-1000x1000.jpg" alt="Our Warehouse" width="498" height="498" loading="lazy"></figure></div><div class="profile-section__content"><div class="profile-section__desc">Stock Image</div></div></div></article></div><section class="company-images" aria-label="Company Images"><h2>Company Images</h2><div class="company-images__grid" data-company-images="[{&quot;full&quot;:&quot;https://5.imimg.com/data5/NSDMERP/Board/2022/11/HG/QN/JB/39820220/39820220-board-1669188482338-1000x1000.jpg&quot;,&quot;bimg&quot;:&quot;https://5.imimg.com/data5/NSDMERP/Board/2022/11/HG/QN/JB/39820220/39820220-board-1669188482338-1000x1000.jpg&quot;,&quot;thumb&quot;:&quot;https://5.imimg.com/data5/NSDMERP/Board/2022/11/HG/QN/JB/39820220/39820220-board-1669188482338-125x125.jpg&quot;},{&quot;full&quot;:&quot;https://5.imimg.com/data5/NSDMERP/Location/2022/11/DN/JH/VO/39820220/39820220-location-1669188487017-1000x1000.jpg&quot;,&quot;bimg&quot;:&quot;https://5.imimg.com/data5/NSDMERP/Location/2022/11/DN/JH/VO/39820220/39820220-location-1669188487017-1000x1000.jpg&quot;,&quot;thumb&quot;:&quot;https://5.imimg.com/data5/NSDMERP/Location/2022/11/DN/JH/VO/39820220/39820220-location-1669188487017-125x125.jpg&quot;},{&quot;full&quot;:&quot;https://5.imimg.com/data5/NSDMERP/Location/2022/11/FH/OS/LH/39820220/39820220-location-1669188490816-1000x1000.jpg&quot;,&quot;bimg&quot;:&quot;https://5.imimg.com/data5/NSDMERP/Location/2022/11/FH/OS/LH/39820220/39820220-location-1669188490816-1000x1000.jpg&quot;,&quot;thumb&quot;:&quot;https://5.imimg.com/data5/NSDMERP/Location/2022/11/FH/OS/LH/39820220/39820220-location-1669188490816-125x125.jpg&quot;},{&quot;full&quot;:&quot;https://5.imimg.com/data5/NSDMERP/Location/2022/11/TI/QG/EC/39820220/39820220-location-1669188494318-1000x1000.jpg&quot;,&quot;bimg&quot;:&quot;https://5.imimg.com/data5/NSDMERP/Location/2022/11/TI/QG/EC/39820220/39820220-location-1669188494318-1000x1000.jpg&quot;,&quot;thumb&quot;:&quot;https://5.imimg.com/data5/NSDMERP/Location/2022/11/TI/QG/EC/39820220/39820220-location-1669188494318-125x125.jpg&quot;}]"><figure class="company-images__item" data-index="0"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/39820220-board-1669188482338-1000x1000.jpg" width="250" height="250" alt="39820220-board-1669188482338" loading="lazy"></figure><figure class="company-images__item" data-index="1"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/39820220-location-1669188487017-1000x1000.jpg" width="250" height="250" alt="39820220-location-1669188487017" loading="lazy"></figure><figure class="company-images__item" data-index="2"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/39820220-location-1669188490816-1000x1000.jpg" width="250" height="250" alt="39820220-location-1669188490816" loading="lazy"></figure><figure class="company-images__item" data-index="3"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/39820220-location-1669188494318-1000x1000.jpg" width="250" height="250" alt="39820220-location-1669188494318" loading="lazy"></figure></div></section><section class="factsheet-table" aria-label="Factsheet"><h2 class="factsheet-table__heading">Factsheet</h2><div class="factsheet-table__section"><h3 class="factsheet-table__title">Basic Information</h3><dl class="factsheet-table__list"><div class="factsheet-table__row"><dt class="factsheet-table__label">Nature of Business</dt><dd class="factsheet-table__value"><span>Manufacturer</span></dd></div><div class="factsheet-table__row"><dt class="factsheet-table__label">Additional Business</dt><dd class="factsheet-table__value"><ul><li>Retail Business</li><li>Works Contract</li><li>Supplier of Services</li></ul></dd></div><div class="factsheet-table__row"><dt class="factsheet-table__label">Company CEO</dt><dd class="factsheet-table__value"><span>S Saurabh</span></dd></div><div class="factsheet-table__row"><dt class="factsheet-table__label">Registered Address</dt><dd class="factsheet-table__value"><span>Patna, Bihar</span></dd></div><div class="factsheet-table__row"><dt class="factsheet-table__label">Total Number of Employees</dt><dd class="factsheet-table__value"><span>Upto 10 People</span></dd></div><div class="factsheet-table__row"><dt class="factsheet-table__label">GST Registration Date</dt><dd class="factsheet-table__value"><span>2018</span></dd></div><div class="factsheet-table__row"><dt class="factsheet-table__label">Legal Status of Firm</dt><dd class="factsheet-table__value"><span>Limited Company</span></dd></div></dl></div><div class="factsheet-table__section"><h3 class="factsheet-table__title">Statutory Profile</h3><dl class="factsheet-table__list"><div class="factsheet-table__row"><dt class="factsheet-table__label">Banker</dt><dd class="factsheet-table__value"><ul><li>INDUSIND BANK</li><li>IndusInd Bank</li></ul></dd></div><div class="factsheet-table__row"><dt class="factsheet-table__label">GST No.</dt><dd class="factsheet-table__value"><span>10**********1Z9</span></dd></div><div class="factsheet-table__row"><dt class="factsheet-table__label">CIN No.</dt><dd class="factsheet-table__value"><span>U51507BR****OPC****58</span></dd></div></dl></div></section></div><section class="homepage-ratings" aria-label="Ratings and Reviews"><div data-island="RatingReviews" data-props="{&quot;sort_type&quot;:&quot;1&quot;,&quot;limit&quot;:20,&quot;pagelinktype&quot;:&quot;home&quot;,&quot;is_presnt_tstmonial&quot;:1,&quot;testimonialPageLink&quot;:&quot;/quicksyssolutionsopc/testimonial.html&quot;,&quot;variant&quot;:&quot;footer&quot;}" data-hydrate="visible" data-hydrated=""><section class="rating-reviews " aria-busy="false" aria-label="Ratings and Reviews"><span id="footerreviews" class="rating-reviews__anchor" aria-hidden="true"></span><header class="rating-reviews__header"><h2 class="rating-reviews__title">Ratings &amp; Reviews</h2></header><div class="rating-reviews__summary"><div class="rating-reviews__summary-wrapper"><div class="rating-reviews__overall-section"><div class="rating-reviews__overall-rating"><span class="rating-reviews__overall-value">4.7</span><span class="rating-reviews__overall-max">/5</span><span class="stars-wrapper rating-reviews_stars rating-reviews__stars--inline" aria-hidden="true" style="--rating: 4.7;"><span class="stars-bg"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(3).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(3).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(3).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(3).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(3).svg" alt="" aria-hidden="true"></span><span class="stars-fill"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(4).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(4).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(4).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(4).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(4).svg" alt="" aria-hidden="true"></span></span><span class="rating-reviews__tooltip" data-tooltip="Seller&#39;s final rating is a weighted average of star ratings, review recency, content quality, and rater quality score." aria-label="Rating info">i</span></div><p class="rating-reviews__total">3 Ratings</p></div><div class="rating-reviews__bars"><p class="rating-reviews__bar-row"><span class="rating-reviews__bar-label">5 star</span><span class="rating-reviews__bar-track"><span class="rating-reviews__bar-fill" style="width: 66.6667%;"></span></span><span class="rating-reviews__bar-count">2</span></p><p class="rating-reviews__bar-row"><span class="rating-reviews__bar-label">4 star</span><span class="rating-reviews__bar-track"><span class="rating-reviews__bar-fill" style="width: 33.3333%;"></span></span><span class="rating-reviews__bar-count">1</span></p><p class="rating-reviews__bar-row"><span class="rating-reviews__bar-label">3 star</span><span class="rating-reviews__bar-track"><span class="rating-reviews__bar-fill" style="width: 0%;"></span></span><span class="rating-reviews__bar-count">0</span></p><p class="rating-reviews__bar-row"><span class="rating-reviews__bar-label">2 star</span><span class="rating-reviews__bar-track"><span class="rating-reviews__bar-fill" style="width: 0%;"></span></span><span class="rating-reviews__bar-count">0</span></p><p class="rating-reviews__bar-row"><span class="rating-reviews__bar-label">1 star</span><span class="rating-reviews__bar-track"><span class="rating-reviews__bar-fill" style="width: 0%;"></span></span><span class="rating-reviews__bar-count">0</span></p></div><div class="rating-reviews__satisfaction"><p class="rating-reviews__satisfaction-title"><svg class="rating-reviews__thumb-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect height="10" width="3" x="2" y="10"></rect><path d="M19,9H14V4a1,1,0,0,0-1-1H12L7.66473,8.37579A3.00021,3.00021,0,0,0,7,10.259V18a2,2,0,0,0,2,2h6.43481a2.99991,2.99991,0,0,0,2.69037-1.67273L21,12.5V11A2,2,0,0,0,19,9Z"></path></svg>User Satisfaction</p><p class="rating-reviews__bar-row"><span class="rating-reviews__bar-label">Response</span><span class="rating-reviews__bar-track"><span class="rating-reviews__bar-fill rating-reviews__bar-fill--green" style="width: 100%;"></span></span><span class="rating-reviews__bar-count">100%</span></p><p class="rating-reviews__bar-row"><span class="rating-reviews__bar-label">Delivery</span><span class="rating-reviews__bar-track"><span class="rating-reviews__bar-fill rating-reviews__bar-fill--green" style="width: 0%;"></span></span><span class="rating-reviews__bar-count">0%</span></p></div></div></div><div class="rating-reviews__reviews-heading"><h3>Most Relevant Reviews</h3></div><div class="rating-reviews__reviews"><div class="rating-reviews__reviews-inner"><article class="review-card"><span id="comment-0" class="review-card__anchor" aria-hidden="true"></span><div class="review-card__avatar" aria-hidden="true">M</div><div class="review-card__body"><p class="review-card__meta"><span>Md Sirajuddin</span><span class="review-card__sep">|</span><span class="review-card__location">Patna, Bihar</span></p><p class="review-card__stars-row"><span class="stars-wrapper rating-reviews_stars rating-reviews__stars--inline" aria-hidden="true" style="--rating: 4.0;"><span class="stars-bg"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(3).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(3).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(3).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(3).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(3).svg" alt="" aria-hidden="true"></span><span class="stars-fill"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(4).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(4).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(4).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(4).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(4).svg" alt="" aria-hidden="true"></span></span></p><p class="review-card__date-row"><span>05-May-25</span><span class="review-card__sep">|</span><span>Product Name : <span class="review-card__product">LG Split Air Conditioners</span></span></p><div class="review-card__votes"><p class="review-card__vote-row review-card__vote-row--up">Response<svg height="20" viewBox="0 0 24 24" width="20" fill="var(--color-success)" class="review-card__thumb" aria-hidden="true"><rect height="10" width="3" x="2" y="10"></rect><path d="M19,9H14V4a1,1,0,0,0-1-1H12L7.66473,8.37579A3.00021,3.00021,0,0,0,7,10.259V18a2,2,0,0,0,2,2h6.43481a2.99991,2.99991,0,0,0,2.69037-1.67273L21,12.5V11A2,2,0,0,0,19,9Z"></path></svg></p></div></div></article><article class="review-card"><span id="comment-1" class="review-card__anchor" aria-hidden="true"></span><div class="review-card__avatar" aria-hidden="true">S</div><div class="review-card__body"><p class="review-card__meta"><span>Sandip Kumar</span><span class="review-card__sep">|</span><span class="review-card__location">Motihari, Bihar</span></p><p class="review-card__stars-row"><span class="stars-wrapper rating-reviews_stars rating-reviews__stars--inline" aria-hidden="true" style="--rating: 5.0;"><span class="stars-bg"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(3).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(3).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(3).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(3).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(3).svg" alt="" aria-hidden="true"></span><span class="stars-fill"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(4).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(4).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(4).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(4).svg" alt="" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(4).svg" alt="" aria-hidden="true"></span></span></p><p class="review-card__date-row"><span>27-April-26</span><span class="review-card__sep">|</span><span>Product Name : <span class="review-card__product">Daikin Tower AC</span></span></p></div></article></div><div class="rating-reviews__view-more"><a class="rating-reviews__view-more-link" href="https://www.indiamart.com/quicksyssolutionsopc/testimonial.html">View More Reviews</a></div></div></section></div></section></main></div><section class="explore-categories" aria-labelledby="explore-cat-heading"><div class="explore-categories__header"><h2 class="explore-categories__title" id="explore-cat-heading">Explore our categories</h2></div><div class="explore-categories__grid"><div class="explore-categories__card"><figure class="explore-categories__figure"><a href="https://www.indiamart.com/quicksyssolutionsopc/daikin-split-air-conditioner.html"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/daikin-ftkm35tv-inverter-split-air-conditioner-500x500.jpg" width="150" height="150" alt="Daikin Split Air Conditioner" loading="lazy" data-dataimg="https://5.imimg.com/data5/SELLER/Default/2022/12/MF/FJ/GC/39820220/daikin-ftkm35tv-inverter-split-air-conditioner-500x500.jpg"></a></figure><div class="explore-categories__info"><a href="https://www.indiamart.com/quicksyssolutionsopc/daikin-split-air-conditioner.html" class="explore-categories__name">Daikin Split Air Conditioner</a><a href="https://www.indiamart.com/quicksyssolutionsopc/daikin-split-air-conditioner.html" class="explore-categories__count">4 products available</a></div></div><div class="explore-categories__card"><figure class="explore-categories__figure"><a href="https://www.indiamart.com/quicksyssolutionsopc/vrf-system.html"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/quicksys-solutions-opc-pvt-ltd-500x500.jpeg" width="150" height="150" alt="Vrf System" loading="lazy" data-dataimg="https://5.imimg.com/data5/SELLER/Default/2022/12/DO/VH/WB/39820220/quicksys-solutions-opc-pvt-ltd-500x500.jpeg"></a></figure><div class="explore-categories__info"><a href="https://www.indiamart.com/quicksyssolutionsopc/vrf-system.html" class="explore-categories__name">Vrf System</a><a href="https://www.indiamart.com/quicksyssolutionsopc/vrf-system.html" class="explore-categories__count">3 products available</a></div></div><div class="explore-categories__card"><figure class="explore-categories__figure"><a href="https://www.indiamart.com/quicksyssolutionsopc/cassette-air-conditioner.html"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/one-way-daikin-fka71cvm-cassette-air-conditioner-500x500.jpg" width="150" height="150" alt="Cassette Air Conditioner" loading="lazy" data-dataimg="https://5.imimg.com/data5/SELLER/Default/2022/12/RP/ES/NG/39820220/one-way-daikin-fka71cvm-cassette-air-conditioner-500x500.jpg"></a></figure><div class="explore-categories__info"><a href="https://www.indiamart.com/quicksyssolutionsopc/cassette-air-conditioner.html" class="explore-categories__name">Cassette Air Conditioner</a><a href="https://www.indiamart.com/quicksyssolutionsopc/cassette-air-conditioner.html" class="explore-categories__count">3 products available</a></div></div><div class="explore-categories__card"><figure class="explore-categories__figure"><a href="https://www.indiamart.com/quicksyssolutionsopc/split-air-conditioner.html"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/screenshot-2022-12-10-22-41-33-073-com-google-android-apps-docs-500x500.jpg" width="150" height="150" alt="Split Air Conditioner" loading="lazy" data-dataimg="https://5.imimg.com/data5/SELLER/Default/2022/12/KZ/AI/CX/39820220/screenshot-2022-12-10-22-41-33-073-com-google-android-apps-docs-500x500.jpg"></a></figure><div class="explore-categories__info"><a href="https://www.indiamart.com/quicksyssolutionsopc/split-air-conditioner.html" class="explore-categories__name">Split Air Conditioner</a><a href="https://www.indiamart.com/quicksyssolutionsopc/split-air-conditioner.html" class="explore-categories__count">2 products available</a></div></div><div class="explore-categories__card"><figure class="explore-categories__figure"><a href="https://www.indiamart.com/quicksyssolutionsopc/vrv-system.html"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/vrv-systems-500x500.jpg" width="150" height="150" alt="VRV System" loading="lazy" data-dataimg="https://5.imimg.com/data5/SELLER/Default/2022/12/HC/FJ/II/39820220/vrv-systems-500x500.jpg"></a></figure><div class="explore-categories__info"><a href="https://www.indiamart.com/quicksyssolutionsopc/vrv-system.html" class="explore-categories__name">VRV System</a><a href="https://www.indiamart.com/quicksyssolutionsopc/vrv-system.html" class="explore-categories__count">3 products available</a></div></div><div class="explore-categories__card explore-categories__card--viewall"><div class="explore-categories__info explore-categories__info--viewall"><a href="https://www.indiamart.com/quicksyssolutionsopc/products-and-services.html" class="explore-categories__viewall-link">View complete range</a></div></div></div></section><div class="fcp-ad-slot" id="Below_Related_Products" aria-label="Advertisement"><ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-0673059417528889" data-ad-slot="8501342440"></ins></div><footer class="footer"><div class="footer__banner"><h2 class="footer__banner-title">Get in touch with us</h2></div><div class="footer__body"><div class="footer__columns"><nav class="footer__col footer__col--company" aria-labelledby="footer-nav-heading"><h3 id="footer-nav-heading" class="footer__col-heading">Our Company</h3><ul class="footer__nav"><li><a href="https://www.indiamart.com/quicksyssolutionsopc/aboutus.html">About Us</a></li><li><a href="https://www.indiamart.com/quicksyssolutionsopc/products-and-services.html">Our Products</a></li><li><a href="https://www.indiamart.com/quicksyssolutionsopc/enquiry.html">Contact Us</a></li><li><a href="https://www.indiamart.com/quicksyssolutionsopc/videos.html">Videos</a></li><li><a href="https://www.indiamart.com/quicksyssolutionsopc/photos.html">Photos</a></li></ul></nav><section class="footer__col footer__col--reach" aria-labelledby="footer-reach-heading"><h3 id="footer-reach-heading" class="footer__col-heading">Reach Us</h3><address class="footer__address-block"><div class="footer__address-text"><strong class="footer__company-name"><span class="footer__map-pin" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(8).svg" width="15" height="24" alt="" aria-hidden="true"></span><span class="footer__company-name-text">Quicksys Solutions (OPC) Private Limited</span></strong><span class="footer__address">Patna, Bihar</span></div></address><div class="footer__contact-person"><span class="footer__contact-icon" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(9).svg" width="20.869" height="20.87" alt="" aria-hidden="true"></span><span class="footer__contact-name">S Saurabh (Business Head)</span></div><div class="footer__phone"><span class="footer__contact-icon footer__phone-icon" aria-hidden="true"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(10).svg" width="19" height="19" alt="" aria-hidden="true"></span><div class="footer__phone-content"><div class="footer__phone-reveal"><div data-island="PhoneReveal" data-props="{&quot;section&quot;:&quot;Footer&quot;,&quot;ctaName&quot;:&quot;Call Now&quot;,&quot;className&quot;:&quot;phone-reveal-btn footer-phone-btn&quot;,&quot;channel&quot;:&quot;sms&quot;,&quot;heading&quot;:&quot;Contact us&quot;}" data-hydrate="visible"><button type="button" class="phone-reveal-btn footer-phone-btn" data-cta="Call Now" data-section="Footer">Call Now</button></div></div><div class="footer__response-rate-wrapper"><div data-island="EnquiryButton" data-props="{&quot;section&quot;:&quot;Footer&quot;,&quot;ctaName&quot;:&quot;Response Rate&quot;,&quot;ctaType&quot;:&quot;Message&quot;,&quot;heading&quot;:&quot;Contact us&quot;,&quot;isOneClick&quot;:true,&quot;className&quot;:&quot;footer__response-rate-btn footer__response-rate&quot;,&quot;htmlLabel&quot;:&quot;&lt;strong&gt;43%&lt;/strong&gt; Call Response Rate&quot;}" data-hydrate="visible"><button type="button" class="footer__response-rate-btn footer__response-rate" data-cta="Response Rate" data-section="Footer"><span><strong>43%</strong> Call Response Rate</span></button></div></div></div></div><div class="footer__cta-row" role="group" aria-label="Contact actions"><div data-island="EnquiryButton" data-props="{&quot;ctaName&quot;:&quot;Send SMS&quot;,&quot;section&quot;:&quot;Footer&quot;,&quot;heading&quot;:&quot;Send SMS&quot;,&quot;ctaType&quot;:&quot;Message&quot;,&quot;isOneClick&quot;:true,&quot;className&quot;:&quot;btn-footer-sms&quot;,&quot;iconName&quot;:&quot;sms&quot;}" data-hydrate="visible" class="footer__cta-sms"><button type="button" class="btn-footer-sms" data-cta="Send SMS" data-section="Footer"><span class="btn-footer-icon"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(11).svg" width="18" height="16" aria-hidden="true" alt=""></span>Send SMS</button></div><div data-island="EnquiryButton" data-props="{&quot;ctaName&quot;:&quot;Send Email&quot;,&quot;section&quot;:&quot;Footer&quot;,&quot;heading&quot;:&quot;Send Email&quot;,&quot;ctaType&quot;:&quot;Message&quot;,&quot;isOneClick&quot;:true,&quot;className&quot;:&quot;btn-footer-email&quot;,&quot;iconName&quot;:&quot;email&quot;}" data-hydrate="visible" class="footer__cta-email"><button type="button" class="btn-footer-email" data-cta="Send Email" data-section="Footer"><span class="btn-footer-icon"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(12).svg" width="18" height="13" aria-hidden="true" alt=""></span>Send Email</button></div></div></section></div><div class="footer__social" role="group" aria-label="Share on social media"><p class="footer__social-label"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(13).svg" width="21" height="16.425" alt="" aria-hidden="true"><span>Share us via</span></p><ul class="footer__social-icons"><li><a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.indiamart.com%2Fquicksyssolutionsopc%2F" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(14).svg" width="27" height="27" alt="" aria-hidden="true"></a></li><li><a href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fwww.indiamart.com%2Fquicksyssolutionsopc%2F" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(15).svg" width="27" height="27" alt="" aria-hidden="true"></a></li><li><a href="https://twitter.com/share?url=https%3A%2F%2Fwww.indiamart.com%2Fquicksyssolutionsopc%2F" target="_blank" rel="noopener noreferrer" aria-label="Share on X/Twitter"><img src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/spriteCompanyDesktop_5(16).svg" width="27.213" height="27.213" alt="" aria-hidden="true" preserveaspectratio="xMidYMid meet"></a></li></ul></div></div></footer><div class="bl-form-with-ad"><section class="homepage-bl-form" aria-label="Post Your Requirement"><div data-island="BLForm" data-props="{}" data-hydrate="visible"></div></section><div class="fcp-ad-slot" id="div-gpt-ad-1760419833522-0" aria-label="Advertisement"></div></div><section class="homepage-recommended" aria-label="Recommended Products"><div data-island="RecommendedProducts" data-props="{}" data-hydrate="visible"></div></section><div id="caas-global-footer"><div data-island="PremiumFooterCaaS" data-props="{}" data-hydrate="visible"></div></div><div><div data-island="AdManager" data-props="{}" data-hydrate="visible"></div></div><div><div data-island="EnquiryFormModal" data-props="{}" data-hydrate="immediate" data-hydrated=""></div></div><div><div data-island="LoginPopup" data-props="{}" data-hydrate="immediate" data-hydrated=""></div></div><div><div data-island="ScrollToTop" data-props="{}" data-hydrate="immediate" data-hydrated=""></div></div><div><div data-island="CompanyAlbumLightbox" data-props="{}" data-hydrate="immediate" data-hydrated=""><dialog class="album-lightbox"></dialog></div></div></div><script>window.__COMPANY_DATA__={"company":{"glid":39820220,"alias":"quicksyssolutionsopc","companyName":"Quicksys Solutions (OPC) Private Limited","mcat0":179008,"pnsNumber":"+91-8047805988","responseRate":"43","city":"Patna","state":"Bihar","top8Products":[{"id":2849014229948,"name":"Daikin FTKM35U Inverter Split Air Conditioner","image":"https://5.imimg.com/data5/SELLER/Default/2022/12/MF/FJ/GC/39820220/daikin-ftkm35tv-inverter-split-air-conditioner-250x250.jpg","mcatId":"179019","catId":"82"},{"id":2849014034688,"name":"Daikin FTL50 Split Air Conditioner","image":"https://5.imimg.com/data5/SELLER/Default/2022/12/CR/AI/BW/39820220/daikin-ftl50-split-air-conditioner-250x250.jpg","mcatId":"179008","catId":"82"},{"id":2849014161988,"name":"Daikin MTKM50U Split Air Conditioner","image":"https://5.imimg.com/data5/SELLER/Default/2022/12/AY/SY/JZ/39820220/daikin-mtkm50u-split-air-conditioner-250x250.jpg","mcatId":"179008","catId":"82"},{"id":19987657891,"name":"Daikin FTX35AXV1 Split Air Conditioner","image":"https://5.imimg.com/data5/SELLER/Default/2026/5/610219897/TV/AM/JA/39820220/daikin-ftx35axv1-split-air-conditioner-250x250.jpeg","mcatId":"179008","catId":"82"},{"id":2856813292055,"name":"Cassette Air Conditioner","image":"https://5.imimg.com/data5/SELLER/Default/2022/12/DO/VH/WB/39820220/quicksys-solutions-opc-pvt-ltd-250x250.jpeg","mcatId":"24492","catId":"66"},{"id":2856813292255,"name":"Industrial Air Ventilation System","image":"https://5.imimg.com/data5/SELLER/Default/2025/6/522796337/PT/RQ/ON/39820220/industrial-air-ventilation-system-250x250.jpg","mcatId":"21087","catId":"852"},{"id":2855466098233,"name":"Daikin VRV 4 HP System","image":"https://5.imimg.com/data5/ANDROID/Default/2024/12/473703150/CY/PN/VR/39820220/product-jpeg-250x250.jpg","mcatId":"192665","catId":"66"},{"id":23432582891,"name":"One Way Daikin FKA71CVM Cassette Air Conditioner","image":"https://5.imimg.com/data5/SELLER/Default/2022/12/RP/ES/NG/39820220/one-way-daikin-fka71cvm-cassette-air-conditioner-250x250.jpg","mcatId":"184919","catId":"66"},{"id":2849175144648,"name":"Quicksys solutions OPC Pvt","image":"https://5.imimg.com/data5/SELLER/Default/2026/5/610215952/VA/EZ/AB/39820220/quicksys-solutions-opc-pvt-250x250.png","mcatId":"184919","catId":"66"},{"id":2849011074373,"name":"Daikin FCVF30ARV16 Cassette Air Conditioner","image":"https://5.imimg.com/data5/SELLER/Default/2022/12/JA/BK/CP/39820220/daikin-fcvf30arv16-2-4-ton-cassette-air-conditioner-250x250.jpg","mcatId":"184919","catId":"66"},{"id":2856813291948,"name":"Dakin Cassette Type Air Conditioning","image":"https://5.imimg.com/data5/SELLER/Default/2022/12/KZ/AI/CX/39820220/screenshot-2022-12-10-22-41-33-073-com-google-android-apps-docs-250x250.jpg","mcatId":"24492","catId":"66"},{"id":2850658588412,"name":"Split Air Conditioners","image":"https://5.imimg.com/data5/SELLER/Default/2026/5/610221075/KL/YP/FA/39820220/split-air-conditioners-250x250.png","mcatId":"38089","catId":"82"},{"id":23432580162,"name":"Daikin RXQ6ARY6 VRV X System","image":"https://5.imimg.com/data5/SELLER/Default/2022/12/HC/FJ/II/39820220/vrv-systems-250x250.jpg","mcatId":"192665","catId":"66"},{"id":2851674846530,"name":"VRV Indoor Units","image":"https://5.imimg.com/data5/ANDROID/Default/2023/7/322080514/VW/GX/GQ/39820220/product-jpeg-250x250.jpg","mcatId":"40857","catId":"66"},{"id":2851674854733,"name":"Daikin Side Discharge Vrv Outdoor Unit","image":"https://5.imimg.com/data5/ANDROID/Default/2023/7/322080891/XQ/BR/IC/39820220/product-jpeg-250x250.jpg","mcatId":"40857","catId":"66"},{"id":2849013884488,"name":"Daikin Ductable Air Conditioner","image":"https://5.imimg.com/data5/SELLER/Default/2022/12/YK/EH/TK/39820220/daikin-fdmf36crv16-ducted-air-conditioner-250x250.jpg","mcatId":"209104","catId":"66"},{"id":23432578997,"name":"Daikin FDMF36CRV16 Ducted Air Conditioner","image":"https://5.imimg.com/data5/SELLER/Default/2022/12/HV/BI/UV/39820220/daikin-fdmf36crv16-ducted-air-conditioner-250x250.jpeg","mcatId":"209104","catId":"66"},{"id":2849008734788,"name":"Daikin FVQ125CVEB Tower Air Conditioner","image":"https://5.imimg.com/data5/SELLER/Default/2022/12/OQ/TC/NL/39820220/may-lanh-tu-dung-daikin-fva71amvm-inverter-40hp-3-pha-1-250x250.jpg","mcatId":"209106","catId":"66"},{"id":2857760132291,"name":"Industrial Evaporative Air Coolers","image":"https://5.imimg.com/data5/SELLER/Default/2026/5/610223206/KQ/YX/BF/39820220/product-jpeg-250x250.jpeg","mcatId":"73229","catId":"852"}],"isPaid":false,"rcvCountry":"India","rcvCityId":70464,"rcvCustType":"1114","seller_rating":"4.7","rating_count":"3","membersince":"9 yrs","gst_verified_flag":1,"verified_exporter_flag":"0","free_supplier_verified_flag":1,"catalogue_url":"https://www.indiamart.com/quicksyssolutionsopc/","glb_cntCd":"IN","businessType":"Wholesaler","userCountry":"IN"},"pageType":"aboutus","showAds":true,"proserve":"P","categories":[{"name":"Daikin Split Air Conditioner","products":[{"display_id":2849014229948,"name":"Daikin FTKM35U Inverter Split Air Conditioner","mcatId":"179019","catId":"82"},{"display_id":2849014034688,"name":"Daikin FTL50 Split Air Conditioner","mcatId":"179008","catId":"82"},{"display_id":2849014161988,"name":"Daikin MTKM50U Split Air Conditioner","mcatId":"179008","catId":"82"},{"display_id":19987657891,"name":"Daikin FTX35AXV1 Split Air Conditioner","mcatId":"179008","catId":"82"}]},{"name":"Vrf System","products":[{"display_id":2856813292055,"name":"Cassette Air Conditioner","mcatId":"24492","catId":"66"},{"display_id":2856813292255,"name":"Industrial Air Ventilation System","mcatId":"21087","catId":"852"},{"display_id":2855466098233,"name":"Daikin VRV 4 HP System","mcatId":"192665","catId":"66"}]},{"name":"Cassette Air Conditioner","products":[{"display_id":23432582891,"name":"One Way Daikin FKA71CVM Cassette Air Conditioner","mcatId":"184919","catId":"66"},{"display_id":2849175144648,"name":"Quicksys solutions OPC Pvt","mcatId":"184919","catId":"66"},{"display_id":2849011074373,"name":"Daikin FCVF30ARV16 Cassette Air Conditioner","mcatId":"184919","catId":"66"}]},{"name":"Split Air Conditioner","products":[{"display_id":2856813291948,"name":"Dakin Cassette Type Air Conditioning","mcatId":"24492","catId":"66"},{"display_id":2850658588412,"name":"Split Air Conditioners","mcatId":"38089","catId":"82"}]},{"name":"VRV System","products":[{"display_id":23432580162,"name":"Daikin RXQ6ARY6 VRV X System","mcatId":"192665","catId":"66"},{"display_id":2851674846530,"name":"VRV Indoor Units","mcatId":"40857","catId":"66"},{"display_id":2851674854733,"name":"Daikin Side Discharge Vrv Outdoor Unit","mcatId":"40857","catId":"66"}]},{"name":"Ducted Air Conditioner","products":[{"display_id":2849013884488,"name":"Daikin Ductable Air Conditioner","mcatId":"209104","catId":"66"},{"display_id":23432578997,"name":"Daikin FDMF36CRV16 Ducted Air Conditioner","mcatId":"209104","catId":"66"}]},{"name":"Tower Air Conditioner","products":[{"display_id":2849008734788,"name":"Daikin FVQ125CVEB Tower Air Conditioner","mcatId":"209106","catId":"66"}]},{"name":"Industrial cooler","products":[{"display_id":2857760132291,"name":"Industrial Evaporative Air Coolers","mcatId":"73229","catId":"852"}]}]};window.__SPRITE_URL__="https://hm.imimg.com/dist/client/spriteCompanyDesktop_5.svg";window.glmodid="FCP";</script><script>
+(function() {
+try {
+var cd = window.__COMPANY_DATA__;
+if (!cd || !Array.isArray(cd.categories)) return;
+function norm(s) { return (s == null ? '' : String(s)).trim().toLowerCase(); }
+var subLinks = [{"label":"Daikin Split Air Conditioner","link":"/quicksyssolutionsopc/daikin-split-air-conditioner.html"},{"label":"Vrf System","link":"/quicksyssolutionsopc/vrf-system.html"},{"label":"Cassette Air Conditioner","link":"/quicksyssolutionsopc/cassette-air-conditioner.html"},{"label":"Split Air Conditioner","link":"/quicksyssolutionsopc/split-air-conditioner.html"},{"label":"VRV System","link":"/quicksyssolutionsopc/vrv-system.html"},{"label":"Ducted Air Conditioner","link":"/quicksyssolutionsopc/ducted-air-conditioner.html"},{"label":"Tower Air Conditioner","link":"/quicksyssolutionsopc/tower-air-conditioner.html"},{"label":"Industrial cooler","link":"/quicksyssolutionsopc/industrial-cooler.html"}];
+// Build { [categoryNameLower]: catLink }
+var byCatName = {};
+subLinks.forEach(function(cat) {
+if (!cat) return;
+var catKey = norm(cat.label);
+if (!catKey) return;
+byCatName[catKey] = cat.link || '';
+});
+// Merge into __COMPANY_DATA__.categories[] (category-level only)
+cd.categories.forEach(function(c) {
+if (!c || typeof c !== 'object') return;
+var catLink = byCatName[norm(c.name)];
+if (catLink && !c.link) c.link = catLink;
+});
+} catch (e) {
+// Non-fatal: keep page usable even if enrichment fails.
+}
+})();
+</script><script src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/jquery.js"></script><script type="text/javascript" id="" charset="">var glid=google_tag_manager["rm"]["59460"](69),idYandex="";
+idYandex=window.location.href.indexOf("https://m.indiamart.com/")>-1?"NotApplicable":window.location.href.indexOf("https://hindi.indiamart.com/")>-1?"NotApplicable":window.location.href.indexOf("https://dir.indiamart.com/")>-1?"NotApplicable":window.location.href.indexOf("https://export.indiamart.com/")>-1?"NotApplicable":window.location.href.indexOf("https://buyer.indiamart.com/")>-1?"NotApplicable":window.location.href.indexOf("https://shopping.indiamart.com/")>-1?"NotApplicable":window.location.href.indexOf("https://vp.indiamart.com")>
+-1?"NotApplicable":window.location.href.indexOf("https://www.indiamart.com")>-1?"NotApplicable":window.location.href.indexOf("https://help.indiamart.com")>-1?"NotApplicable":window.location.href.indexOf("https://shipwith.indiamart.com")>-1?"NotApplicable":window.location.href.indexOf("https://app.indiamart.com")>-1?"NotApplicable":window.location.href.indexOf("https://seller.indiamart.com/premiumservices")>-1||window.location.href.indexOf("https://seller.indiamart.com/services/premiumservices")>-1?
+"NotApplicable":51115208;(function(a,e,f,g,b,c,d){idYandex!="NotApplicable"&&(a[b]=a[b]||function(){(a[b].a=a[b].a||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d))})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");typeof ym=="function"&&(ym(idYandex,"init",{id:idYandex,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0,webvisor:!0}),ym(idYandex,"userParams",{UserID:glid}));
+var clrIntrvlYndx=setInterval(function(){document.readyState=="complete"&&(typeof enableYandexTrck=="function"&&enableYandexTrck(),clearInterval(clrIntrvlYndx))},100);</script><script type="text/javascript" id="" charset="">function ReadCookie(){name1="";var a=document.cookie;cookiearray=a.split(";");for(a=0;a<cookiearray.length;a++)name=cookiearray[a].split("\x3d")[0],name=name.trim(),value=cookiearray[a].split("\x3d")[1],dec=unescape(value),Cookie="ImeshVisitor xnHist v4iilex im_iss GeoLoc _ga __gads _gat_UA-10312824-1 _gid _ym_d _ym_isad _ym_uid _ym_visorc_51115208 _ym_visorc_49148410 iploc sessid r blformopen site-entry-page G_ENABLED_IDPS imEqGl users_rating userDet webPSupport _fbp con_iso mcatfilter pst SL_C_23361dd035530_KEY SL_C_23361dd035530_SID lang PUSH_TOKEN SUBSCRIPTION_DETAILS HARD_ASK_STATUS miscellaneous showVernacular showFullBanner IntentGn mB1 SOFT_ASK_STATUS OPT_IN_SHOWN_TIME".split(" "),
+-1===Cookie.indexOf(name)&&(name1=name1+"Key:"+name+" ");a=new Date;var b=a.getSeconds();(new Date("27-Jan-2021")).getTime()<=a.getTime()&&(new Date("29-Jan-2021")).getTime()>=a.getTime()&&0==b%10&&((new Date).toLocaleTimeString("en-US",{hour12:!1,hour:"numeric",minute:"numeric"}),""!==name1&&(a=new XMLHttpRequest,a.onreadystatechange=function(){},a.open("Get","https://utils.imimg.com/?cookie\x3d"+name1),a.setRequestHeader("Content-type","application/x-www-form-urlencoded"),a.send()))}
+"complete"==document.readyState?ReadCookie():window.addEventListener("load",function(){ReadCookie()});</script><script type="text/javascript" id="" charset="">setTimeout(function(){try{if(t=(new Date).getTime()-29621226E4,u="//log.indiamart.com/logger/?",oneOutOf=200,!(t%oneOutOf)){dr={all:!0};rlc={img:3,script:3,link:3,fetch:["api/search.rp"]};r=performance.getEntriesByType("resource");for(c=r.length;c;)b=Math.random()*c--|0,d=r[c],r[c]=r[b],r[b]=d;it="initiatorType";for(i=0;i<r.length;i++)if(rlc[r[i][it]]){if(typeof rlc[r[i][it]]=="number")if(rlc[r[i][it]])rlc[r[i][it]]--;else continue;else if(Array.isArray(rlc[r[i][it]])){match=!1;for(j=0;j<rlc[r[i][it]].length;j++)if(rv=
+rlc[r[i][it]][j],r[i].name.indexOf(rv)>=0){match=!0;break}if(!match)continue}s="";p={staT:"startTime",redS:"redirectStart",redE:"redirectEnd",worS:"workerStart",fetS:"fetchStart",domLS:"domainLookupStart",domLE:"domainLookupEnd",conS:"connectStart",secCS:"secureConnectionStart",conE:"connectEnd",reqS:"requestStart",reqE:"responseStart",resE:"responseEnd",decBS:"decodedBodySize",dur:"duration",encBS:"encodedBodySize",resS:"responseStatus",traS:"transferSize",firIRS:"firstInterimResponseStart"};for(k in p)s+=
+"\x26"+k+"\x3d"+Math.round(r[i][p[k]]);s+="\x26redDu\x3d"+(r[i].redirectEnd-r[i].redirectStart);s+="\x26domLDu\x3d"+(r[i].domainLookupEnd-r[i].domainLookupStart);s+="\x26conDu\x3d"+(r[i].connectEnd-r[i].connectStart);s+="\x26comSz\x3d"+Math.round(r[i].transferSize/r[i].encodedBodySize);p={iniT:it,nexHP:"nextHopProtocol",renBS:"renderBlockingStatus",delT:"deliveryType"};for(k in p)s+="\x26"+k+"\x3d"+(r[i][p[k]]||"");up=r[i].name.match(/https:\/\/([^.]+\.[^\/]+)\/([^?]+)(\?.*)?/);if(dr.all||dr[up[1]])s+=
+"\x26dom\x3d"+location.hostname+"\x26resD\x3d"+up[1]+"\x26pat\x3d"+up[2]+"\x26tim\x3d"+t,navigator.sendBeacon(u+s)}}}catch(a){navigator.sendBeacon(u+"msg\x3derror:"+a+", at "+location)}},1E4);</script><script type="text/javascript" id="" charset="">try{var key="lpvi",now=Date.now();localStorage&&localStorage.setItem(key,JSON.stringify({lp:google_tag_manager["rm"]["59460"](75),ot:now}))}catch(a){console.error("Error in SetLastPage tag:",a)};</script><script src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/enqBl_desktop.min.js"></script><script>
+window.addEventListener('load', function() {
+var s = document.createElement('script');
+s.src = 'https://utils.imimg.com/im_msg/js/im_msg.js?v=64';
+s.async = true;
+document.body.appendChild(s);
+});
+</script><script type="module" src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/header.v1.js"></script><script src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/suggestlight.js" async=""></script><iframe src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/store-v18.html" id="storageFrame" name="storageFrame" style="visibility: hidden; width: 0px; height: 0px;"></iframe><script src="./Quicksys Solutions (OPC) Private Limited - Manufacturer from Patna, India _ About Us_files/im_msg.js" async=""></script><script type="text/javascript" id="" charset="">var clickTrackingData=google_tag_manager["rm"]["59460"](96),idYandex="";idYandex=window.location.href.indexOf("https://m.indiamart.com/")>-1?49148410:window.location.href.indexOf("https://vp.indiamart.com")>-1?"NotApplicable":window.location.href.indexOf("https://buyer.indiamart.com")>-1?"NotApplicable":51115208;
+function trackYandexImpression(c){typeof ym!="function"&&(function(a,f,g,h,b,d,e){a[b]=a[b]||function(){(a[b].a=a[b].a||[]).push(arguments)};a[b].l=1*new Date;d=f.createElement(g);e=f.getElementsByTagName(g)[0];d.async=1;d.src=h;e.parentNode.insertBefore(d,e)}(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym"),ym(idYandex,"init",{clickmap:!0,trackLinks:!0,accurateTrackBounce:!0,webvisor:!0}));window.ims=window.ims||{};window.yaParams=ims.dirTypeFull=="Impcat"?{ClickTrackingData:{MCAT_LISTING_CLICKS:c}}:
+ims.dirTypeFull=="City"?{ClickTrackingData:{CITY_LISTING_CLICKS:c}}:ims.dirTypeFull=="Search"?{ClickTrackingData:{SEARCH_LISTING_CLICKS:c}}:{ClickTrackingData:{LISTING_CLICKS:c}};ym(idYandex,"params",window.yaParams||{})}clickTrackingData&&idYandex!="NotApplicable"&&trackYandexImpression(clickTrackingData);</script><script type="text/javascript" id="" charset="">var clickTrackingData=google_tag_manager["rm"]["59460"](104),idYandex="";idYandex=window.location.href.indexOf("https://m.indiamart.com/")>-1?49148410:window.location.href.indexOf("https://vp.indiamart.com")>-1?"NotApplicable":window.location.href.indexOf("https://buyer.indiamart.com")>-1?"NotApplicable":51115208;
+function trackYandexImpression(c){typeof ym!="function"&&(function(a,f,g,h,b,d,e){a[b]=a[b]||function(){(a[b].a=a[b].a||[]).push(arguments)};a[b].l=1*new Date;d=f.createElement(g);e=f.getElementsByTagName(g)[0];d.async=1;d.src=h;e.parentNode.insertBefore(d,e)}(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym"),ym(idYandex,"init",{clickmap:!0,trackLinks:!0,accurateTrackBounce:!0,webvisor:!0}));window.ims=window.ims||{};window.yaParams=ims.dirTypeFull=="Impcat"?{ClickTrackingData:{MCAT_LISTING_CLICKS:c}}:
+ims.dirTypeFull=="City"?{ClickTrackingData:{CITY_LISTING_CLICKS:c}}:ims.dirTypeFull=="Search"?{ClickTrackingData:{SEARCH_LISTING_CLICKS:c}}:{ClickTrackingData:{LISTING_CLICKS:c}};ym(idYandex,"params",window.yaParams||{})}clickTrackingData&&idYandex!="NotApplicable"&&trackYandexImpression(clickTrackingData);</script></body></html>
