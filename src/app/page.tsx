@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Snowflake, ShieldCheck, Wrench } from "lucide-react";
+import { ArrowRight, Snowflake, ShieldCheck, Star, Wrench } from "lucide-react";
 import { products, siteConfig, whyUs } from "@/lib/data";
 
 export default function HomePage() {
@@ -40,16 +40,43 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="mx-auto flex w-full max-w-md items-center justify-center">
+          <div className="mx-auto w-full max-w-md">
             <div className="rounded-[2rem] border border-white/25 bg-white p-8 shadow-2xl shadow-black/20 md:p-10">
-              <Image
-                src={siteConfig.nameImage}
-                alt={siteConfig.name}
-                width={480}
-                height={200}
-                className="mx-auto h-auto w-full object-contain"
-                priority
-              />
+              <div className="flex flex-col items-center text-center">
+                <Image
+                  src={siteConfig.nameImage}
+                  alt={siteConfig.name}
+                  width={480}
+                  height={160}
+                  className="mx-auto h-auto w-full max-w-sm object-contain"
+                  priority
+                />
+                <p className="mt-4 text-sm text-slate-500">
+                  {siteConfig.location}
+                </p>
+              </div>
+
+              <div className="mt-8 grid grid-cols-3 gap-3 border-t border-slate-100 pt-6">
+                <div className="text-center">
+                  <div className="mx-auto mb-1 flex h-8 w-8 items-center justify-center rounded-full bg-amber-50 text-amber-500">
+                    <Star className="h-4 w-4 fill-current" />
+                  </div>
+                  <p className="text-lg font-bold text-brand-900">
+                    {siteConfig.rating}
+                  </p>
+                  <p className="text-[11px] text-slate-500">Customer rating</p>
+                </div>
+                <div className="text-center">
+                  <p className="text-lg font-bold text-brand-900">
+                    {siteConfig.established}
+                  </p>
+                  <p className="mt-1 text-[11px] text-slate-500">Established</p>
+                </div>
+                <div className="text-center">
+                  <p className="text-lg font-bold text-brand-900">6+</p>
+                  <p className="mt-1 text-[11px] text-slate-500">Product lines</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
