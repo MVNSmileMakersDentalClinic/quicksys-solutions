@@ -13,16 +13,10 @@ export default function HomePage() {
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-brand-200">
               Patna, Bihar · Est. {siteConfig.established}
             </p>
-            <div className="mt-6">
-              <Image
-                src={siteConfig.wordmark}
-                alt={siteConfig.name}
-                width={520}
-                height={120}
-                className="h-auto w-full max-w-md object-contain brightness-0 invert"
-                priority
-              />
-            </div>
+            <h1 className="mt-5 font-display text-5xl font-semibold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
+              Quicksys
+              <span className="block text-brand-100">Solutions</span>
+            </h1>
             <p className="mt-5 max-w-xl text-lg text-brand-50/90 md:text-xl">
               {siteConfig.tagline}. Split, cassette, ducted, tower & VRV systems
               for homes, offices, and industrial spaces.
@@ -47,13 +41,13 @@ export default function HomePage() {
           </div>
 
           <div className="mx-auto flex w-full max-w-md items-center justify-center">
-            <div className="rounded-[2rem] border border-white/25 bg-white p-10 shadow-2xl shadow-black/20 md:p-14">
+            <div className="rounded-[2rem] border border-white/25 bg-white p-8 shadow-2xl shadow-black/20 md:p-10">
               <Image
-                src={siteConfig.logo}
+                src={siteConfig.nameImage}
                 alt={siteConfig.name}
-                width={280}
-                height={280}
-                className="mx-auto h-48 w-48 object-contain md:h-56 md:w-56"
+                width={480}
+                height={200}
+                className="mx-auto h-auto w-full object-contain"
                 priority
               />
             </div>

@@ -19,7 +19,7 @@ export const siteConfig = {
   rating: "4.7",
   bank: "IndusInd Bank",
   logo: "/images/qs_logo.jpeg",
-  wordmark: "/images/name.jpeg",
+  nameImage: "/images/name.jpeg",
   social: {
     facebook:
       "https://www.facebook.com/p/Quicksys-Solutions-Pvt-Ltd-100063633563321/",

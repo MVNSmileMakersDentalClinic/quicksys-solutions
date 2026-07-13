@@ -39,13 +39,6 @@ export default function AboutPage() {
             height={360}
             className="mx-auto h-auto w-full max-w-xs object-contain"
           />
-          <Image
-            src={siteConfig.wordmark}
-            alt=""
-            width={320}
-            height={80}
-            className="mx-auto mt-6 h-auto w-full max-w-sm object-contain"
-          />
         </div>
       </div>
 

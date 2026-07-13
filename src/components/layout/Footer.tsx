@@ -16,13 +16,7 @@ export function Footer() {
               height={56}
               className="h-14 w-14 rounded-xl bg-white object-contain p-1"
             />
-            <Image
-              src={siteConfig.wordmark}
-              alt={siteConfig.name}
-              width={180}
-              height={40}
-              className="h-8 w-auto object-contain brightness-0 invert"
-            />
+            <p className="font-display text-2xl font-semibold">{siteConfig.name}</p>
           </div>
           <p className="mt-3 text-sm leading-relaxed text-brand-200">
             {siteConfig.legalName}. Established {siteConfig.established} in{" "}
