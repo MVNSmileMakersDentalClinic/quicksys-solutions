@@ -126,15 +126,20 @@ export type GalleryItem = {
 };
 
 export const galleryItems: GalleryItem[] = [
-  // Add images under public/gallery/company/ and public/gallery/events/
-  // then register them here, for example:
-  // {
-  //   id: "company-1",
-  //   title: "Company Office",
-  //   category: "Company",
-  //   image: "/gallery/company/office-1.jpg",
-  //   description: "Our team and workplace in Patna.",
-  // },
+  {
+    id: "event-1",
+    title: "Company Event",
+    category: "Events",
+    image: "/gallery/events/event-1.jpg",
+    description: "Quicksys Solutions at a company event.",
+  },
+  {
+    id: "event-2",
+    title: "Team Gathering",
+    category: "Events",
+    image: "/gallery/events/event-2.jpg",
+    description: "Moments from our team and client gatherings.",
+  },
 ];
 
 export const whyUs = [
