@@ -1,18 +1,20 @@
 import type { Metadata } from "next";
-import { Manrope, Fraunces } from "next/font/google";
+import { Barlow_Condensed, IBM_Plex_Sans } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ImageLightboxProvider } from "@/components/shared/ImageLightbox";
 import { siteConfig } from "@/lib/data";
 import "./globals.css";
 
-const sans = Manrope({
+const sans = IBM_Plex_Sans({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-sans",
 });
 
-const display = Fraunces({
+const display = Barlow_Condensed({
   subsets: ["latin"],
+  weight: ["500", "600", "700"],
   variable: "--font-display",
 });
 

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MessageCircle } from "lucide-react";
 import { LightboxImage } from "@/components/shared/ImageLightbox";
 import { products, siteConfig } from "@/lib/data";
 
@@ -11,27 +12,25 @@ export const metadata: Metadata = {
 
 export default function ProductsPage() {
   return (
-    <div className="mx-auto max-w-6xl px-4 py-14">
-      <div className="max-w-2xl">
-        <p className="text-sm font-semibold uppercase tracking-wider text-brand-600">
-          Our Range
-        </p>
-        <h1 className="mt-2 font-display text-4xl font-semibold text-brand-950">
+    <div className="mx-auto max-w-7xl px-4 py-12">
+      <div className="border-b border-frost-200 pb-8">
+        <p className="section-label">Our Range</p>
+        <h1 className="mt-2 font-display text-5xl font-bold uppercase tracking-wide text-navy-950">
           Products & Systems
         </h1>
-        <p className="mt-3 text-slate-600">
+        <p className="mt-3 max-w-2xl text-navy-600">
           Complete air conditioning and ventilation solutions for homes,
           offices, retail, and industrial spaces across Bihar.
         </p>
       </div>
 
-      <div className="mt-10 grid gap-8">
-        {products.map((product) => (
+      <div className="mt-8 space-y-5">
+        {products.map((product, index) => (
           <article
             key={product.id}
-            className="grid overflow-hidden rounded-3xl border bg-white shadow-sm md:grid-cols-[280px_1fr]"
+            className="dealer-panel grid overflow-hidden md:grid-cols-[260px_1fr]"
           >
-            <div className="relative min-h-56">
+            <div className="relative min-h-52 bg-frost-100 md:min-h-full">
               <LightboxImage
                 src={product.image}
                 alt={product.title}
@@ -39,19 +38,22 @@ export default function ProductsPage() {
                 caption={product.summary}
                 fill
                 imageClassName="object-cover"
-                sizes="(max-width: 768px) 100vw, 280px"
+                sizes="(max-width: 768px) 100vw, 260px"
               />
+              <span className="absolute left-3 top-3 rounded bg-navy-900/90 px-2 py-1 text-[10px] font-bold uppercase tracking-wide text-white">
+                #{String(index + 1).padStart(2, "0")}
+              </span>
             </div>
-            <div className="p-6 md:p-8">
-              <h2 className="text-2xl font-semibold text-brand-950">
+            <div className="p-5 md:p-7">
+              <h2 className="font-display text-3xl font-bold uppercase tracking-wide text-navy-950">
                 {product.title}
               </h2>
-              <p className="mt-2 text-slate-600">{product.summary}</p>
+              <p className="mt-2 text-navy-600">{product.summary}</p>
               <ul className="mt-4 grid gap-2 sm:grid-cols-2">
                 {product.highlights.map((item) => (
                   <li
                     key={item}
-                    className="rounded-lg bg-brand-50 px-3 py-2 text-sm text-brand-900"
+                    className="border-l-2 border-ice-500 bg-frost-50 px-3 py-2 text-sm text-navy-800"
                   >
                     {item}
                   </li>
@@ -63,8 +65,9 @@ export default function ProductsPage() {
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-6 inline-flex rounded-full bg-brand-700 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-800"
+                className="btn-whatsapp mt-6"
               >
+                <MessageCircle className="h-4 w-4" />
                 Enquire on WhatsApp
               </a>
             </div>
@@ -72,14 +75,11 @@ export default function ProductsPage() {
         ))}
       </div>
 
-      <div className="mt-12 rounded-2xl bg-brand-50 p-6 text-center">
-        <p className="text-slate-700">
+      <div className="mt-10 rounded-lg bg-navy-900 p-6 text-center text-white md:p-8">
+        <p className="font-display text-2xl font-bold uppercase tracking-wide">
           Looking for a custom combination or bulk supply?
         </p>
-        <Link
-          href="/contact"
-          className="mt-3 inline-flex font-semibold text-brand-800 underline"
-        >
+        <Link href="/contact" className="btn-quote mt-4 inline-flex">
           Reach our team
         </Link>
       </div>

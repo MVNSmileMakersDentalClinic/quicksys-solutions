@@ -155,7 +155,7 @@ export function LightboxImage({
         openLightbox({ src, alt, title, caption });
       }}
       className={cn(
-        "cursor-zoom-in focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-600 focus-visible:ring-offset-2",
+        "cursor-zoom-in focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ice-500 focus-visible:ring-offset-2",
         fill ? "absolute inset-0 block w-full" : "inline-flex",
         className
       )}

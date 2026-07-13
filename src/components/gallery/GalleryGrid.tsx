@@ -1,10 +1,10 @@
 "use client";
 
-import { ImageIcon } from "lucide-react";
+import { Award, ImageIcon } from "lucide-react";
 import { LightboxImage } from "@/components/shared/ImageLightbox";
 import { galleryItems } from "@/lib/data";
 
-const categories = ["Company", "Events"] as const;
+const categories = ["Events", "Company"] as const;
 
 export function GalleryGrid() {
   return (
@@ -14,18 +14,23 @@ export function GalleryGrid() {
 
         return (
           <section key={category}>
-            <div className="mb-6">
-              <p className="text-sm font-semibold uppercase tracking-wider text-brand-600">
-                Gallery
-              </p>
-              <h2 className="mt-1 font-display text-3xl font-semibold text-brand-950">
-                {category}
-              </h2>
-              <p className="mt-2 text-sm text-slate-600">
-                {category === "Company"
-                  ? "Photos of our company, workplace, and team."
-                  : "Photos from launches, visits, and company events."}
-              </p>
+            <div className="mb-6 flex items-center gap-3">
+              {category === "Events" && (
+                <Award className="h-6 w-6 text-amber-500" />
+              )}
+              <div>
+                <p className="section-label">
+                  {category === "Events" ? "Recognition" : "Workplace"}
+                </p>
+                <h2 className="mt-1 font-display text-3xl font-bold uppercase tracking-wide text-navy-950">
+                  {category === "Events" ? "Government Awards" : "Company"}
+                </h2>
+                <p className="mt-1 text-sm text-navy-600">
+                  {category === "Events"
+                    ? "Award-winning recognition from government bodies."
+                    : "Photos of our company, workplace, and team."}
+                </p>
+              </div>
             </div>
 
             {items.length > 0 ? (
@@ -33,9 +38,9 @@ export function GalleryGrid() {
                 {items.map((item) => (
                   <article
                     key={item.id}
-                    className="overflow-hidden rounded-2xl border bg-white shadow-sm"
+                    className="dealer-panel overflow-hidden"
                   >
-                    <div className="relative aspect-[4/3] bg-slate-100">
+                    <div className="relative aspect-[4/3] bg-frost-100">
                       <LightboxImage
                         src={item.image}
                         alt={item.title}
@@ -47,9 +52,11 @@ export function GalleryGrid() {
                       />
                     </div>
                     <div className="p-4">
-                      <h3 className="font-semibold text-brand-950">{item.title}</h3>
+                      <h3 className="font-display text-xl font-bold uppercase text-navy-950">
+                        {item.title}
+                      </h3>
                       {item.description && (
-                        <p className="mt-1 text-sm text-slate-600">
+                        <p className="mt-1 text-sm text-navy-600">
                           {item.description}
                         </p>
                       )}
@@ -58,17 +65,18 @@ export function GalleryGrid() {
                 ))}
               </div>
             ) : (
-              <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed bg-white px-6 py-16 text-center">
-                <div className="mb-3 flex h-14 w-14 items-center justify-center rounded-full bg-brand-50">
-                  <ImageIcon className="h-7 w-7 text-brand-700" />
+              <div className="flex flex-col items-center justify-center rounded-lg border border-dashed border-frost-200 bg-white px-6 py-16 text-center">
+                <div className="mb-3 flex h-14 w-14 items-center justify-center rounded-md bg-frost-100">
+                  <ImageIcon className="h-7 w-7 text-navy-500" />
                 </div>
-                <p className="font-semibold text-brand-900">
+                <p className="font-display text-xl font-bold uppercase text-navy-900">
                   Photos coming soon
                 </p>
-                <p className="mt-2 max-w-md text-sm text-slate-600">
+                <p className="mt-2 max-w-md text-sm text-navy-600">
                   Add images to{" "}
-                  <code className="rounded bg-slate-100 px-1.5 py-0.5 text-xs">
-                    public/gallery/{category === "Company" ? "company" : "events"}/
+                  <code className="rounded bg-frost-100 px-1.5 py-0.5 text-xs">
+                    public/gallery/
+                    {category === "Company" ? "company" : "events"}/
                   </code>{" "}
                   and register them in the gallery list.
                 </p>
