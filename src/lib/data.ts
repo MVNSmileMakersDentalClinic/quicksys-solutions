@@ -128,17 +128,19 @@ export type GalleryItem = {
 export const galleryItems: GalleryItem[] = [
   {
     id: "event-1",
-    title: "Company Event",
+    title: "Government Award",
     category: "Events",
     image: "/gallery/events/event-1.jpg",
-    description: "Quicksys Solutions at a company event.",
+    description:
+      "Quicksys Solutions receiving a government award for excellence.",
   },
   {
     id: "event-2",
-    title: "Team Gathering",
+    title: "Award Recognition",
     category: "Events",
     image: "/gallery/events/event-2.jpg",
-    description: "Moments from our team and client gatherings.",
+    description:
+      "Recognized with a government award for outstanding contribution.",
   },
 ];
 
